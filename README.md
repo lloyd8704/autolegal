@@ -2,7 +2,7 @@
 #### Creation date: 30 July 2022
 #### Last updated: 30 July 2022
 
-#### How to  run the app
+###### How to  run the app
 1. Install Node.js
 2. Navigate to the project folder and run the following from a terminal:
     - npm init -y (to create a Node.js project)
