@@ -3,15 +3,13 @@ import AbstractView from "./AbstractView.js";
 export default class extends AbstractView {
     constructor(params) {
         super(params);
-        this.setTitle("Dashboard");
+        this.setTitle("Pleadings");
     }
 
     async getHtml() {
         return `
-            <h1>Dashboard</h1>
-            <p>
-                We will think of stuff to put here
-            </p>
+            <h1>Pleadings</h1>
+            <p>Should be on the Pleadings page!</p>
         `;
     }
 }

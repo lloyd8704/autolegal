@@ -5,8 +5,8 @@ const app = express();
 
 app.use("/static", express.static(path.resolve(__dirname, "frontend", "static")));
 
-app.get("/*", (request, response) => (
-    response.sendFile(path.resolve(__dirname, "frontend", "index.html"))
-));
+app.get("/*", (req, res) => {
+    res.sendFile(path.resolve(__dirname, "frontend", "index.html"));
+});
 
-app.listen(process.env.PORT || 8080);
+app.listen(process.env.PORT || 8080, () => console.log("Server running..."));
