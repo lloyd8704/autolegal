@@ -1,10 +1,11 @@
 {
   "name": "playground",
   "version": "1.0.0",
-  "description": "",
+  "description": "1. Install Node.js\r 2. Navigate to the project folder and run the following from a terminal:\r     - npm init -y (to create a Node.js project)\r     - npm i express (to install Express)\r     - `node server.js` (to run the server)\r 3. Open localhost in a web browser, using the port specified in server.js e.g. http://localhost:8080/",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
