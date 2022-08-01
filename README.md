@@ -1,6 +1,6 @@
 # List of things to know
 #### Creation date: 30 July 2022
-#### Last updated: 30 July 2022
+#### Last updated: 1 August 2022
 
 ###### Git commands
 
