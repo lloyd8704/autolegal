@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="app.css" />
+    <title>Correspondence</title>
+  </head>
+    <body style="background-color: black">
+    <navi>
+      <div class="heading1">
+        <h4>AutoLegal</h4>
+      </div>
+      <ul class="nav-linker">
+          <li><a class="nav-link" href="Index.html">Home </a></li>
+          <li><a class="nav-link active" href="/Pages/newfile.html">New File </a></li>
+          <li><a class="nav-link" href="../frontend2/Pages/correspondence.html">Correspondence</a></li>
+          <li><a class="nav-link" href="../frontend2/Pages/pleadings.html">Pleadings </a></li>
+          <li><a class="nav-link" href="../frontend2/Pages/legislation.html">Legislation</a></li> 
+      </ul>
+    </navi>
+    </style>
+    </head>
+      <body>   
+       <div class="container">
+        <form action="/frontend2/Pages/action_page.php" method="post">
+         <div class="row">
+        <div class="col-25">
+            <label for="cname">Recipient:</label>
+        </div>
+          <div class="col-75">
+            <input type="text" id="contactpersonname" name="contactpersonname" value="" autofocus="on">
+        </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="remail">Their email address:</label>
+          </div>
+          <div class="col-75">
+            <input type="text" id="theiremailaddress" name="theiremailaddress" value="">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="rrnumber">Their ref:</label>
+          </div>
+          <div class="col-75">
+            <input type="text" id="receipientreferencenumber" name="receipientreferencenumber" placeholder="">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="ornumber">Our ref:</label>
+          </div>
+          <div class="col-75">
+            <input type="text" id="ourreferencenumber" name="ourreferencenumber" placeholder="">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="cperson">Contact person:</label>
+          </div>
+          <div class="col-75">
+            <input type="text" id="contactperson" name="contactperson" placeholder="">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="sline">Subject line:</label>
+          </div>
+          <div class="col-75">
+            <input type="text" id="subjectline" name="subjectline" placeholder="">
+          </div>
+        </div>
+        <div class="row">
+          <div class="row">
+            
+            <div class="col-25">
+            <label for="eparagraph">How to end the letter?</label>
+          </div>
+          <div class="col-75">
+            <select id="eparagraph" name="eparagraph">
+              <option value="yourssincerely">Yours sincerely</option>
+              <option value="yoursfaithfully">Yours faithfully</option>
+            </select>
+          </div>
+        </div>
+        <div class="col-25">
+          <label for="author">Author of the letter:</label>
+        </div>
+        <div class="col-75">
+          <select id="author" name="author">
+            <option value="authora">Attorney A</option>
+            <option value="authorb">Attorney B</option>
+            <option value="authorc">Attorney C</option>
+            <option value="authord">Attorney D</option>
+            <option value="authore">Attorney E</option>
+                      </select>
+        </div>
+      </div>
+           
+        <div class="row">
+          <input type="submit" value="Submit">
+          <input type="reset" value="Reset" name="reset" />
+          </div>
+        </form>
+      </div>
+      <div>
+        <a href="/frontend2/Pages/newfile.html"><button class="btn5" onclick="">Back</button></a>
+      </div> 
+     </body>
+</html>
