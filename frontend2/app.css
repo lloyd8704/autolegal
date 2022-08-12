@@ -1,0 +1,439 @@
+/*all boxes for navigation*/
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+
+}
+
+/*background image for home page*/
+.backgroundhome {
+  background: url(/frontend2/Documents/statueofjustice.jpg);
+  background-repeat: none;
+  background-position: 0 60px;
+  background-size: cover
+}
+
+/*headings on each html page black/white screen*/
+.body-text {
+  display: flex;
+  font-family: "Montserrat", sans-serif;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+
+}
+
+/*headings on each html page white/black screen*/
+.body-text1 {
+  display: flex;
+  font-family: "Montserrat", sans-serif;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  color: white;
+
+}
+
+/*labels for form in generatorp.html - to be deleted*/
+.body-text2 {
+  font-family: "Montserrat", sans-serif;
+  margin-top: 150px;
+  color: black;
+  align-items: center;
+
+}
+
+/*heading on index.html page*/
+.body-text3 {
+  font-family: "Montserrat", sans-serif;
+  margin-top: 5%;
+  margin-left: 25%;
+
+
+}
+
+/*navigation bar black/white screen*/
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 10vh;
+  background-color: black;
+  font-family: "Montserrat", sans-serif;
+
+}
+
+/*navigation bar white/black screen*/
+navi {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 10vh;
+  background-color: white;
+  font-family: "Montserrat", sans-serif;
+
+
+}
+
+/*headings in navigation bar for black/white background*/
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+
+}
+
+.nav-links li {
+  list-style: none;
+}
+
+/*heading in navigation bar - autolegal heading*/
+.heading {
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.heading1 {
+  color: black;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 20px;
+  text-align: center;
+}
+
+/*headings in navigation bar - colours and font - for black/white background*/
+.nav-links {
+  color: white;
+  text-decoration: none;
+  letter-spacing: 3px;
+  font-weight: bold;
+  font-size: 14px;
+  padding: 14px 16px;
+
+}
+
+/*colour grey for active navigation bar - in black/white background*/
+.nav-links li a.active {
+  background-color: gray;
+  padding: 14px 16px;
+}
+
+/*removes all hints of hyperlink - removes blue font,underlined,purple colour when visited*/
+a:link,
+a:visited,
+a:hover,
+a:active {
+  color: white;
+  text-decoration: none;
+  padding: 14px 16px;
+}
+
+/*light grey colour for hoverng over navigation bar - in black/white background*/
+li a:hover {
+  background-color: lightgrey;
+  color: white;
+  padding: 14px 16px;
+}
+
+/*button displayed on new file html - navs to generator correspondence*/
+.btn1 {
+  color: white;
+  background-color: black;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: medium;
+  top: 45%;
+  left: 30%;
+  position: fixed;
+  z-index: 2;
+  width: 7cm;
+  height: 1.5cm;
+  padding: 18px 16px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-radius: 3px;
+  cursor: pointer;
+
+}
+
+/*turns buttons 1 and 2 white when user hovers over*/
+.btn1:hover,
+.btn2:hover {
+  border: solid 2px black;
+  background: #fff;
+  color: #1f1f1f !important;
+}
+
+/*button displayed on new file html - navs to generator pleadings*/
+.btn2 {
+  color: white;
+  background-color: black;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: medium;
+  top: 45%;
+  left: 50%;
+  position: absolute;
+  z-index: 2;
+  width: 7cm;
+  height: 1.5cm;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+/*think this button has been deleted*/
+.btn3 {
+  color: black;
+  background-color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: medium;
+  top: 15%;
+  left: 1%;
+  position: absolute;
+  z-index: 2;
+  width: 2cm;
+  height: 1cm;
+  padding: 10px 10px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-radius: 3px;
+  cursor: pointer;
+
+}
+
+.btn3:hover,
+.btn4:hover {
+  border: solid 2px white;
+  background: black;
+  color: white !important;
+}
+
+/*think this button has been deleted*/
+.btn4 {
+  color: black;
+  background-color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: medium;
+  top: 45%;
+  left: 50%;
+  position: absolute;
+  z-index: 2;
+  width: 7cm;
+  height: 1.5cm;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+/*headings in navigation bar for white/black background*/
+.nav-linker {
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+
+}
+
+.nav-linker li {
+  list-style: none;
+}
+
+/*heading for newfile.html - white/black screen*/
+.heading1 {
+  color: black;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 20px;
+}
+
+/*heading for legislation html*/
+.heading2 {
+  color: white;
+  background-color: black;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 1px;
+  font-size: 20px;
+  text-align: center;
+
+}
+
+/*think this has been deleted*/
+.nav-link {
+  color: black;
+  text-decoration: none;
+  letter-spacing: 3px;
+  font-weight: bold;
+  font-size: 14px;
+  padding: 14px 16px;
+
+}
+
+
+.nav-linker li a.active {
+  background-color: #D5D8DC;
+  padding: 14px 16px;
+}
+
+a.nav-link:link,
+a.nav-link:visited,
+a.nav-link:hover,
+a.nav-link:active {
+  color: black;
+  text-decoration: none;
+  padding: 14px 16px;
+}
+
+li a.nav-link:hover {
+  background-color: black;
+  color: white;
+  padding: 14px 16px;
+}
+
+/*labels for form in generatorc.html*/
+.col-25 {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  position: relative;
+  left: 300px;
+  top: 25px
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/*fields for form in generatorc.html*/
+input[type=text],
+select,
+textarea {
+  width: 50%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+  color: black;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  position: relative;
+  left: 200px;
+  top: 20px
+}
+
+label {
+  padding: 0;
+  display: inline-block;
+}
+
+/*Submit button*/
+input[type=submit] {
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  border: 2px solid white;
+  cursor: pointer;
+  position: relative;
+  left: 740px;
+  top: 50px
+}
+
+/*Submit button hover*/
+input[type=submit]:hover {
+  background-color: white;
+  color: black
+}
+
+/*back button*/
+.btn5 {
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 4px;
+  border: 2px solid white;
+  cursor: pointer;
+  position: relative;
+  left: 555px;
+  bottom: 13px
+}
+
+/*back button hover*/
+.btn5:hover {
+  background-color: white;
+  color: black;
+
+}
+
+/*Reset button*/
+input[type=reset] {
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 4px;
+  border: 2px solid white;
+  cursor: pointer;
+  position: relative;
+  left: 550px;
+  top: 50px
+}
+
+/*Reset button hover*/
+input[type=reset]:hover {
+  background-color: white;
+  color: black
+}
+
+.container {
+  border-radius: 5px;
+  background-color: black;
+  padding: 20px;
+}
+
+/*labels for form*/
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 30px;
+}
+
+/*fields for form*/
+.col-75 {
+  float: right;
+  width: 75%;
+  margin-top: 8px;
+  position: relative;
+  left: 0px;
+  top: 20px
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+
+  .col-25,
+  .col-75,
+  input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
