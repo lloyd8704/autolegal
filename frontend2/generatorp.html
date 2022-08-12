@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="app.css" />
+    <title>Correspondence</title>
+  </head>
+  <body style="background-color: black">
+    <navi>
+      <div class="heading1">
+        <h4>AutoLegal</h4>
+      </div>
+        <ul class="nav-linker">
+          <li><a class="nav-link" href="Index.html">Home </a></li>
+          <li><a class="nav-link active" href="/Pages/newfile.html">New File</a></li>
+          <li><a class="nav-link" href="/Pages/correspondence.html">Correspondence</a></li>
+          <li><a class="nav-link" href="/Pages/pleadings.html">Pleadings </a></li>
+          <li><a class="nav-link" href="/Pages/legislation.html">Legislation</a></li>          
+      </ul>
+    </navi>
+    <div class="body-text1">
+      <h1>This is the Correspondence DB</h1>
+    </div>
+    <div>
+      <a href="../frontend2/Pages/newfile.html"><button class="btn3" onclick="">Back</button></a>
+          </div>
+    <form class="body-text2" action="/action_page.php">
+      <label for="cname">To whom is the letter to be addressed?</label><br>
+      <input type="text" id="cname" name="cname" value=""><br>
+      <label for="readdress">Recipient's email address:</label><br>
+      <input type="text" id="eaddress" name="eaddress" value=""><br>
+      <label for="rref">Recipient's reference:</label><br>
+      <input type="text" id="rref" name="rref" value=""><br>
+      <label for="oref">Our reference:</label><br>
+      <input type="text" id="oref" name="oref" value=""><br>
+      <label for="rname">The receipient's name:</label><br>
+      <input type="text" id="name" name="name" value=""><br>
+      <label for="sline">Subject line:</label><br>
+      <input type="text" id="sline" name="sline" value=""><br>
+      <label for="eparagraph">How would you like to end the letter?</label><br>
+      <select id="country" name="country">
+        <option value="ys">Yours sincerely</option>
+        <option value="yf">Yours faithfully</option>
+      </select><br>
+      <label for="attorney">Who wrote the letter?</label><br>
+      <select id="country" name="country">
+        <option value="llo">Lloyd</option>
+        <option value="luo">Lucas</option>
+        <option value="noo">Nontsha</option>
+        <option value="sto">Stefan</option>
+      </select>
+    </div><br><br><br>
+      
+      
+      
+      <input type="submit" value="Submit"><br><br>
+    </form> 
+  </body>
+</html>
