@@ -1,0 +1,52 @@
+<style>
+  #fileInput {
+    display: none;
+  }
+  input[type="text"] {
+    background-color: #ddd;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 327px;
+    height: 37px;
+    position: relative;
+    left: 195px;
+    top: 15px;
+  }
+  input[type="text"].success {
+    background-color: green;
+  }
+  button.success {
+    background-color: green;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 327px;
+    height: 37px;
+    position: relative;
+    left: 195px;
+    top: 15px;
+  }
+</style>
+<input type="file" id="fileInput" webkitdirectory directory />
+<input type="text" id="folderPath" value="" readonly />
+<button id="selectFile">Select File</button>
+<script>
+  const input = document.getElementById("fileInput");
+  const selectFileButton = document.getElementById("selectFile");
+  const folderPath = document.getElementById("folderPath");
+  
+  selectFileButton.addEventListener("click", function() {
+    input.click();
+  });
+  
+  input.addEventListener("change", function() {
+    const filePath = input.files[0].webkitRelativePath;
+    const pathElements = filePath.split('/');
+    const folderName = pathElements[0];
+    folderPath.value = folderName;
+    selectFileButton.classList.add("success");
+    selectFileButton.innerHTML = "Successfully Uploaded";
+    folderPath.classList.remove("success");
+  });
+</script>

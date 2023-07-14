@@ -1,0 +1,461 @@
+#fileprogress {
+    position: relative;
+    left: 385px;
+    top: 11px;
+}
+
+body {
+    background-color: black;
+}
+
+#file {
+    position: relative;
+    left: 710px;
+    top: -13px;
+}
+
+.test {
+    width: 50%;
+    float: left;
+}
+
+.test2 {
+    width: 50%;
+    float: right;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 10vh;
+    background-color: white;
+    font-family: "Montserrat", sans-serif;
+
+    position: absolute;
+
+
+    min-height: 10vh;
+    background-color: white;
+    font-family: "Montserrat", sans-serif;
+    margin: -9px;
+    width: 1365px;
+}
+
+/*headings in navigation bar for white/black background*/
+.nav-linker {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+
+}
+
+.nav-linker li {
+    list-style: none;
+}
+
+/*heading for newfile.html - white/black screen*/
+.heading1 {
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 20px;
+    margin-left: 50px;
+}
+
+.heading2 {
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 10px;
+
+}
+
+.d-none {
+    display: none;
+
+}
+
+p {
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+
+}
+
+.col-55 {
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    position: absolute;
+    margin-top: 20px;
+    left: -30px;
+    padding: 6px 65px;
+
+
+}
+
+.col-5 {
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    position: absolute;
+    margin-top: -15px;
+    left: 570px;
+    padding: 6px 65px;
+
+
+}
+
+.col-85 {
+    margin-left: 124px;
+    width: 250px;
+    height: 20px;
+    position: relative;
+    top: 11px
+}
+
+label {
+    padding: 0;
+    display: inline-block;
+
+}
+
+label1 {
+    padding: 0;
+    display: inline-block;
+    margin-left: 245px;
+}
+
+.col-95 {
+    left: 431px;
+    width: 250px;
+    height: 20px;
+    margin-top: 2px;
+    position: absolute;
+
+}
+
+.p1 {
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    margin-top: 100px;
+    margin-left: 250px;
+    position: absolute;
+
+    padding: 6px 65px;
+    font-size: 100%;
+    cursor: pointer;
+    border-radius: 0;
+    background-color: black;
+    border: none;
+    border: 2px solid white;
+    border-radius: 4px;
+}
+
+.p2 {
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    margin: 0;
+    margin-top: 100px;
+    margin-left: 855px;
+    position: absolute;
+    padding: 6px 65px;
+    font-size: 100%;
+    cursor: pointer;
+    border-radius: 0;
+    background-color: black;
+    border: none;
+    border: 2px solid white;
+    border-radius: 4px;
+
+}
+
+.p3 {
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    margin: 0;
+    position: absolute;
+    top: 47%;
+    left: 28%;
+}
+
+.p4 {
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    margin: 0;
+    position: absolute;
+    top: 47%;
+    left: 73%;
+}
+
+.select-block {
+    width: 300px;
+    margin: 110px auto 30px;
+
+}
+
+
+/* For IE <= 11 */
+select::-ms-expand {
+    display: none;
+}
+
+select:hover,
+select:focus {
+    color: black;
+    background-color: white;
+    border: 2px solid black;
+}
+
+.nav-link {
+    color: black;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 14px 16px;
+
+}
+
+.nav-linker {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+
+}
+
+.nav-linker li {
+    list-style: none;
+}
+
+
+.nav-linker li a.active {
+    border: 2px solid black;
+    border-radius: 4px;
+    padding: 17px 14px;
+    padding: 14px 16px;
+    color: black;
+}
+
+progress {
+    color: white;
+    background-color: black;
+    background: purple;
+    border: black;
+    margin-left: 100px;
+}
+
+progress::-webkit-progress-bar {
+    background: white;
+    border: black;
+    border: 2px solid black;
+
+}
+
+progress::-webkit-progress-value {
+    background: black;
+    border: black;
+    border: 2px solid black;
+
+}
+
+#container {
+
+    margin-top: 40px;
+}
+
+select option {
+    padding: 10px;
+}
+
+#btngeneratorc {
+    top: 20px;
+}
+
+#btngeneratorc1 {
+
+    position: relative;
+    top: 20px;
+    left: 632px;
+    cursor: pointer;
+    color: white;
+    background-color: black;
+    border: white solid 2px;
+    width: 100px;
+    height: 35px;
+    font-weight: bold;
+    border-radius: 4px;
+    font-family: "Montserrat", sans-serif;
+
+}
+
+#btngeneratorc1:hover {
+    color: black;
+    background-color: white;
+    border: black solid 2px;
+}
+
+#folderPath {
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    display: none;
+    height: 33px;
+    width: 327px;
+    padding: 0px 13px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+    color: black;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: small;
+    position: absolute;
+    right: 500px;
+    top: 225px;
+    text-align: -webkit-center;
+}
+
+
+#promptOption {
+    background-color: green;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid black;
+    display: none;
+    width: 359px;
+    height: 38px;
+    padding: 0px 0px;
+    border-radius: 4px;
+    resize: vertical;
+    color: black;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: small;
+    position: relative;
+    left: 495px;
+    top: 10px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    text-align: center;
+}
+
+.dropdowngeneratorc {
+    width: 50%;
+    padding-top: 18px;
+
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: none;
+    color: black;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    position: relative;
+    left: 194px;
+    top: 18px;
+}
+
+#saveLocation {
+    position: relative;
+    font-weight: bold;
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+    height: 37px;
+    width: 355px;
+    left: 37%;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 3px solid white;
+    font-family: "Montserrat", sans-serif;
+}
+
+#saveLocation:hover {
+    background: black;
+    color: white;
+
+}
+
+
+
+#folderPath-label {
+    color: white;
+    display: none;
+    font-weight: bold;
+    font-family: "Montserrat", sans-serif;
+    position: relative;
+    bottom: -25px;
+    left: 324px;
+}
+
+#tooltip {
+
+    top: 130px;
+
+}
+
+.tooltip {
+    position: absolute;
+    display: inline-block;
+    color: white;
+    cursor: default;
+    left: 885px;
+    top: -198px;
+    font-weight: 1000;
+    cursor: pointer;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 197px;
+    background-color: white;
+    color: black;
+    text-align: center;
+    padding: 10px 12px;
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    left: 50%;
+    margin-top: 10px;
+    margin-left: -6px;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+.tooltip .tooltiptext::before {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 7px;
+    margin-left: -7px;
+    border-width: 7px;
+    border-style: solid;
+    border-color: transparent transparent white transparent;
+}
+
+body {
+    overflow: hidden;
+}
+
+.col-25 {
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    position: relative;
+    left: 320px;
+    top: 25px;
+}

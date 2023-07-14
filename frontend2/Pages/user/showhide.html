@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="app.css">
+    <title>Contact List</title>
+    <style type="text/css">
+        .d-none{
+            display: none;
+            
+        }
+        
+    </style>
+  </head>
+  <body>
+    <p>How many Plaintiffs are there?</p>
+    <select id="Plaintiffs" onchange="enableplaintiffs(this)" >
+        <option value="0p">Please select</option>
+        <option value="1p">1 Plaintiff</option>
+        <option value="2p">2 Plaintiffs</option>
+        <option value="3p">3 Plaintiffs</option>
+        <option value="4p">4 Plaintiffs</option>
+        <option value="5p">5 Plaintiffs</option>
+        <option value="6p">6 Plaintiffs</option>
+    </select>
+    
+    <div id="oneplaintiff" class="d-none"><br>
+        <div class="col-25">
+       <label for="onepname">Plaintiff's name:</label>
+      </div>
+      <div class="col-75">
+       <input type="text" class="input1" id="input2" name="onepname" value="">
+      </div>
+      </div>
+    
+      <div id="twoplaintiffs" class="d-none">
+        <div class="col-25">
+       <label for="twopname">Second Plaintiff's name:</label>
+      </div>
+      <div class="col-75">
+       <input type="text" class="input1" id="input2" name="twopname" value="">
+      </div>
+      </div>
+     
+      <div id="threeplaintiffs" class="d-none">
+        <div class="col-25">
+       <label for="threedname">Third Plaintiff's name:</label>
+      </div>
+      <div class="col-75">
+       <input type="text" class="input1" id="input2" name="threepname" value="">
+      </div>
+      </div>
+
+      <div id="fourplaintiffs" class="d-none">
+        <div class="col-25">
+       <label for="fourdname">Fourth Plaintiff's name:</label>
+      </div>
+      <div class="col-75">
+       <input type="text" class="input1" id="input2" name="fourpname" value="">
+      </div>
+      </div>
+
+      <div id="fiveplaintiffs" class="d-none">
+        <div class="col-25">
+       <label for="fivedname">Fifth Plaintiff's name:</label>
+      </div>
+      <div class="col-75">
+       <input type="text" class="input1" id="input2" name="fivepname" value="">
+      </div>
+      </div>
+
+      <div id="sixplaintiffs" class="d-none">
+        <div class="col-25">
+       <label for="sixdname">Sixth Plaintiff's name:</label>
+      </div>
+      <div class="col-75">
+       <input type="text" class="input1" id="input2" name="sixpname" value="">
+      </div>
+      </div>
+    
+      <p>How many Defendants are there?</p>
+    <select id="defendants" onchange="enabledefendants(this)" >
+        <option value="0d">Please select</option>
+        <option value="1d">1 Defendant</option>
+        <option value="2d">2 Defendants</option>
+        <option value="3d">3 Defendants</option>
+        <option value="4d">4 Defendants</option>
+        <option value="5d">5 Defendants</option>
+        <option value="6d">6 Defendants</option>
+    </select>
+    
+    <div id="onedefendant" class="d-none"><br>
+        <div class="col-25">
+       <label for="onedname">Defendant's name:</label>
+      </div>
+      <div class="col-75">
+       <input type="text" class="input1" id="input2" name="onedname" value="">
+      </div>
+      </div>
+
+    <div id="twodefendants" class="d-none">
+        <div class="col-25">
+       <label for="twodname">Second Defendant's name:</label>
+      </div>
+      <div class="col-75">
+       <input type="text" class="input1" id="input2" name="twodname" value="">
+      </div>
+      </div>
+
+      <div id="threedefendants" class="d-none">
+        <div class="col-25">
+       <label for="threedname">Third Defendant's name:</label>
+      </div>
+      <div class="col-75">
+       <input type="text" class="input1" id="input2" name="threedname" value="">
+      </div>
+      </div>
+
+      <div id="fourdefendants" class="d-none">
+        <div class="col-25">
+       <label for="fourdname">Fourth Defendant's name:</label>
+      </div>
+      <div class="col-75">
+       <input type="text" class="input1" id="input2" name="fourdname" value="">
+      </div>
+      </div>
+
+      <div id="fivedefendants" class="d-none">
+        <div class="col-25">
+       <label for="fivedname">Fifth Defendant's name:</label>
+      </div>
+      <div class="col-75">
+       <input type="text" class="input1" id="input2" name="fivedname" value="">
+      </div>
+      </div>
+
+      <div id="sixdefendants" class="d-none">
+        <div class="col-25">
+       <label for="sixdname">Fifth Defendant's name:</label>
+      </div>
+      <div class="col-75">
+       <input type="text" class="input1" id="input2" name="sixdname" value="">
+      </div>
+      </div>
+
+      <script type="text/javascript">
+        function enableplaintiffs(answer){
+            console.log(answer.value);
+            if(answer.value == "0p"){
+        document.getElementById("oneplaintiff").classList.add('d-none');
+        document.getElementById("twoplaintiffs").classList.add('d-none');
+        document.getElementById("threeplaintiffs").classList.add('d-none');
+        document.getElementById("fourplaintiffs").classList.add('d-none');
+        document.getElementById("fiveplaintiffs").classList.add('d-none');
+        document.getElementById("sixplaintiffs").classList.add('d-none');
+        }
+        if(answer.value == "1p"){
+        document.getElementById("oneplaintiff").classList.remove('d-none');
+        document.getElementById("twoplaintiffs").classList.add('d-none');
+        document.getElementById("threeplaintiffs").classList.add('d-none');
+        document.getElementById("fourplaintiffs").classList.add('d-none');
+        document.getElementById("fiveplaintiffs").classList.add('d-none');
+        document.getElementById("sixplaintiffs").classList.add('d-none');
+        }
+        if(answer.value == "2p"){
+        document.getElementById("oneplaintiff").classList.remove('d-none');
+        document.getElementById("twoplaintiffs").classList.remove('d-none');
+        document.getElementById("threeplaintiffs").classList.add('d-none');
+        document.getElementById("fourplaintiffs").classList.add('d-none');
+        document.getElementById("fiveplaintiffs").classList.add('d-none');
+        document.getElementById("sixplaintiffs").classList.add('d-none');
+        } 
+        if(answer.value == "3p"){
+        document.getElementById("oneplaintiff").classList.remove('d-none');
+        document.getElementById("twoplaintiffs").classList.remove('d-none');
+        document.getElementById("threeplaintiffs").classList.remove('d-none');
+        document.getElementById("fourplaintiffs").classList.add('d-none');
+        document.getElementById("fiveplaintiffs").classList.add('d-none');
+        document.getElementById("sixplaintiffs").classList.add('d-none');
+        }
+        if(answer.value == "4p"){
+        document.getElementById("oneplaintiff").classList.remove('d-none');
+        document.getElementById("twoplaintiffs").classList.remove('d-none');
+        document.getElementById("threeplaintiffs").classList.remove('d-none');
+        document.getElementById("fourplaintiffs").classList.remove('d-none');
+        document.getElementById("fiveplaintiffs").classList.add('d-none');
+        document.getElementById("sixplaintiffs").classList.add('d-none');
+        }
+        if(answer.value == "5p"){
+        document.getElementById("oneplaintiff").classList.remove('d-none');
+        document.getElementById("twoplaintiffs").classList.remove('d-none');
+        document.getElementById("threeplaintiffs").classList.remove('d-none');
+        document.getElementById("fourplaintiffs").classList.remove('d-none');
+        document.getElementById("fiveplaintiffs").classList.remove('d-none');
+        document.getElementById("sixplaintiffs").classList.add('d-none');
+        }
+        if(answer.value == "6p"){
+        document.getElementById("oneplaintiff").classList.remove('d-none');
+        document.getElementById("twoplaintiffs").classList.remove('d-none');
+        document.getElementById("threeplaintiffs").classList.remove('d-none');
+        document.getElementById("fourplaintiffs").classList.remove('d-none');
+        document.getElementById("fiveplaintiffs").classList.remove('d-none');
+        document.getElementById("sixplaintiffs").classList.remove('d-none');
+            }
+            
+            };
+        </script>   
+
+        <script type="text/javascript">
+        function enabledefendants(answer){
+        console.log(answer.value);
+        if(answer.value == "0d"){
+        document.getElementById("onedefendant").classList.add('d-none');
+        document.getElementById("twodefendants").classList.add('d-none');
+        document.getElementById("threedefendants").classList.add('d-none');
+        document.getElementById("fourdefendants").classList.add('d-none');
+        document.getElementById("fivedefendants").classList.add('d-none');
+        document.getElementById("sixdefendants").classList.add('d-none');
+        }
+        if(answer.value == "1d"){
+        document.getElementById("onedefendant").classList.remove('d-none');
+        document.getElementById("twodefendants").classList.add('d-none');
+        document.getElementById("threedefendants").classList.add('d-none');
+        document.getElementById("fourdefendants").classList.add('d-none');
+        document.getElementById("fivedefendants").classList.add('d-none');
+        document.getElementById("sixdefendants").classList.add('d-none');
+        }
+        if(answer.value == "2d"){
+        document.getElementById("onedefendant").classList.remove('d-none');
+        document.getElementById("twodefendants").classList.remove('d-none');
+        document.getElementById("threedefendants").classList.add('d-none');
+        document.getElementById("fourdefendants").classList.add('d-none');
+        document.getElementById("fivedefendants").classList.add('d-none');
+        document.getElementById("sixdefendants").classList.add('d-none');
+        } 
+        if(answer.value == "3d"){
+        document.getElementById("onedefendant").classList.remove('d-none');
+        document.getElementById("twodefendants").classList.remove('d-none');
+        document.getElementById("threedefendants").classList.remove('d-none');
+        document.getElementById("fourdefendants").classList.add('d-none');
+        document.getElementById("fivedefendants").classList.add('d-none');
+        document.getElementById("sixdefendants").classList.add('d-none');
+        }
+        if(answer.value == "4d"){
+        document.getElementById("onedefendant").classList.remove('d-none');
+        document.getElementById("twodefendants").classList.remove('d-none');
+        document.getElementById("threedefendants").classList.remove('d-none');
+        document.getElementById("fourdefendants").classList.remove('d-none');
+        document.getElementById("fivedefendants").classList.add('d-none');
+        document.getElementById("sixdefendants").classList.add('d-none');
+        }
+        if(answer.value == "5d"){
+        document.getElementById("onedefendant").classList.remove('d-none');
+        document.getElementById("twodefendants").classList.remove('d-none');
+        document.getElementById("threedefendants").classList.remove('d-none');
+        document.getElementById("fourdefendants").classList.remove('d-none');
+        document.getElementById("fivedefendants").classList.remove('d-none');
+        document.getElementById("sixdefendants").classList.add('d-none');
+        }
+        if(answer.value == "6d"){
+        document.getElementById("onedefendant").classList.remove('d-none');
+        document.getElementById("twodefendants").classList.remove('d-none');
+        document.getElementById("threedefendants").classList.remove('d-none');
+        document.getElementById("fourdefendants").classList.remove('d-none');
+        document.getElementById("fivedefendants").classList.remove('d-none');
+        document.getElementById("sixdefendants").classList.remove('d-none');
+        }
+    };
+</script>
+
+
+
+
+    </body>
+    </html>

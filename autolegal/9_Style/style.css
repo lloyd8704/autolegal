@@ -1,0 +1,3075 @@
+@import url('https://fonts.googleapis.com/css?family=Orbitron');
+@import url('https://fonts.googleapis.com/css?family=Aclonica');
+
+/*all boxes for navigation*/
+* {
+
+    padding-left: 0px;
+    box-sizing: border-box;
+
+}
+
+/*background image for home page*/
+.backgroundhome {
+    background: url(../../frontend2/Documents/HOME\ PAGE\ BACKGROUND.jpg);
+    background-size: 2000px 1000px;
+    background-repeat: no-repeat;
+    /*Need to edit the following code when we obtain better quality image*/
+    background-position-x: 40%;
+    background-position-y: 6%;
+
+}
+
+
+/*headings on each html page black/white screen*/
+.body-text {
+    display: flex;
+    font-family: "Montserrat", sans-serif;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+
+}
+
+/*headings on each html page white/black screen*/
+.body-text1 {
+    display: flex;
+    font-family: "Montserrat", sans-serif;
+    align-items: center;
+    justify-content: center;
+
+    color: white;
+
+}
+
+/*labels for form in generatorp.html - to be deleted*/
+.body-text2 {
+    font-family: "Montserrat", sans-serif;
+    margin-top: 150px;
+    color: black;
+    align-items: center;
+
+}
+
+/*heading on index.html page*/
+.body-text3 {
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-family: Orbitron;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 22%;
+    margin-left: 36%;
+    font-size: 6mm;
+}
+
+.body-text4 {
+    font-family: "Montserrat", sans-serif;
+    color: rgba(245, 245, 245, 0.445);
+    margin-top: -3%;
+    margin-left: 9%;
+    font-size: 6mm;
+
+
+}
+
+.body-text5 {
+    display: flex;
+    font-family: "Montserrat", sans-serif;
+    align-items: center;
+    justify-content: center;
+    top: 20px;
+    position: relative;
+    margin-top: -24px;
+
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+
+}
+
+.heaxagons3 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+
+}
+
+
+.hexagons {
+    display: block;
+    margin-top: -76px;
+
+}
+
+.hexagons2 {
+    display: block;
+    margin-top: -90px;
+    margin-left: 1000px;
+
+}
+
+.hexagons3edit {
+    display: block;
+    margin-top: -20px;
+
+}
+
+.hexagonlegislation {
+    display: block;
+    margin-top: -399px;
+
+}
+
+#home {
+    font-size: 80px;
+    position: relative;
+    bottom: 17px;
+    right: 72px;
+
+}
+
+.navblack {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 10vh;
+    background-color: black;
+    font-family: "Montserrat", sans-serif;
+    margin: -9px;
+    overflow: hidden;
+}
+
+/*navigation bar black/white screen*/
+navi {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 10vh;
+    background-color: black;
+    font-family: "Montserrat", sans-serif;
+    margin: -9px;
+    overflow: hidden;
+
+}
+
+/*navigation bar white/black screen*/
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 10vh;
+    background-color: white;
+    font-family: "Montserrat", sans-serif;
+    margin: -8px -8px -8px -37px;
+    overflow: hidden;
+
+}
+
+/*headings in navigation bar for black/white background*/
+.nav-links .btn2 {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+
+}
+
+.nav-links li .btn2 {
+    list-style: none;
+}
+
+/*heading in navigation bar - autolegal heading*/
+.heading {
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-family: Orbitron;
+    font-size: 25px;
+    text-align: center;
+}
+
+
+/*headings in navigation bar - colours and font - for black/white background*/
+.nav-links .btn2 {
+    color: white;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 14px 16px;
+
+}
+
+/*colour grey for active navigation bar - in black/white background*/
+.nav-links li .btn2 a.active {
+    background-color: gray;
+    padding: 14px 16px;
+}
+
+/*removes all hints of hyperlink - removes blue font,underlined,purple colour when visited*/
+a.btn2 a:link,
+a.btn2 a:visited,
+a.btn2 a:hover,
+a.btn2 a:active {
+    color: white;
+    text-decoration: none;
+    padding: 14px 16px;
+    border: none;
+    border-radius: 4px;
+    border: 2px solid white;
+    cursor: pointer;
+    position: relative;
+    left: 422px;
+    bottom: -15px;
+    width: 25mm;
+}
+
+
+a.btn1:link,
+a.btn1:visited,
+a.btn1:hover,
+a.btn1:active {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 20px 39px;
+    border: none;
+    border-radius: 4px;
+    border: 2px solid black;
+    cursor: pointer;
+    position: relative;
+    left: 430px;
+    bottom: -15px;
+    width: 25mm;
+}
+
+/*light grey colour for hoverng over navigation bar - in black/white background*/
+li a:hover {
+    background-color: lightgrey;
+    color: white;
+    padding: 14px 16px;
+}
+
+/*button displayed on new file html - navs to generator correspondence*/
+.btn1 {
+    color: white;
+    background-color: black;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: medium;
+    top: 45%;
+    left: 30%;
+    position: fixed;
+    z-index: 2;
+    width: 7cm;
+    height: 1.5cm;
+    padding: 18px 16px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+/*turns buttons 1 and 2 white when user hovers over*/
+.btn1:hover,
+.btn2:hover {
+    border: solid 2px black;
+    background: #fff;
+    color: #1f1f1f !important;
+}
+
+
+.buttons-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    padding: 10px;
+    gap: 20px;
+}
+
+.buttons-container a {
+    /* Default state styles */
+    display: inline-block;
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+    border-radius: 4px;
+    padding: 16px 20px;
+    margin: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.2s, color 0.2s;
+    text-align: center;
+    width: 220px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.buttons-container a:link,
+.buttons-container a:active,
+.buttons-container a:visited {
+    /* Styles for links that haven't been visited */
+    color: white;
+    background-color: black;
+}
+
+.buttons-container a:hover {
+    /* Styles for links when the mouse pointer is over them */
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+a.btnp:link,
+a.btnp:visited,
+a.btnp:hover,
+a.btnp:active {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 20px 39px;
+    border: none;
+    border-radius: 4px;
+    border: 2px solid black;
+    cursor: pointer;
+    position: relative;
+    left: 408px;
+    bottom: -15px;
+    width: 25mm;
+}
+
+.btnp {
+    color: white;
+    background-color: black;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: medium;
+    top: 45%;
+    left: 30%;
+    position: fixed;
+    z-index: 2;
+    width: 7cm;
+    height: 1.5cm;
+    padding: 18px 16px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-radius: 3px;
+    cursor: pointer;
+
+}
+
+/*turns buttons 1 and 2 white when user hovers over*/
+.btnp:hover {
+    border: solid 2px black;
+    background: #fff;
+    color: #1f1f1f !important;
+}
+
+/*button displayed on new file html - navs to generator pleadings*/
+.btn2 {
+    color: white;
+    background-color: black;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: medium;
+    top: 45%;
+    left: 50%;
+    position: absolute;
+    z-index: 2;
+
+    height: 1.5cm;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+/*think this button has been deleted*/
+.btn3 {
+    color: black;
+    background-color: white;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: medium;
+    top: 15%;
+    left: 1%;
+    position: absolute;
+    z-index: 2;
+    width: 2cm;
+    height: 1cm;
+    padding: 10px 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-radius: 3px;
+    cursor: pointer;
+
+}
+
+.btn3:hover,
+.btn4:hover {
+    border: solid 2px white;
+    background: black;
+    color: white !important;
+}
+
+/*think this button has been deleted*/
+.btn4 {
+    color: black;
+    background-color: white;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: medium;
+    top: 45%;
+    left: 50%;
+    position: absolute;
+    z-index: 2;
+    width: 7cm;
+    height: 1.5cm;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+/*headings in navigation bar for white/black background*/
+.nav-linker {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+
+}
+
+.nav-linker li {
+    list-style: none;
+}
+
+h4 {
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-family: Orbitron;
+    font-size: 20px;
+}
+
+/*heading for newfile.html - white/black screen*/
+.heading1 {
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-family: Orbitron;
+    font-size: 20px;
+}
+
+/*heading for legislation html*/
+.heading2 {
+    color: white;
+    background-color: black;
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 1px;
+    font-size: 13px;
+    text-align: center;
+    font-family: Orbitron;
+
+
+}
+
+.heading3 {
+    color: white;
+    background-color: black;
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 0px;
+    font-size: 30px;
+    text-align: center;
+    margin: 48px;
+    font-weight: bold;
+    font-family: Orbitron;
+
+}
+
+
+
+/*think this has been deleted*/
+.nav-link {
+    color: black;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 14px 16px;
+    overflow: hidden;
+}
+
+.nav-linker {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+
+}
+
+.nav-linker li {
+    list-style: none;
+}
+
+
+.nav-linker li a.active {
+    border: 2px solid black;
+    border-radius: 4px;
+    padding: 17px 14px;
+    padding: 14px 16px;
+    color: black;
+}
+
+
+.nav-linkerb {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+
+}
+
+.nav-linkerb li {
+    list-style: none;
+}
+
+
+.nav-linkerb li a.active {
+    border: 2px solid white;
+    border-radius: 4px;
+    padding: 17px 14px;
+    padding: 14px 16px;
+    color: white;
+}
+
+a.nav-link:link,
+a.nav-link:visited,
+a.nav-link:hover,
+a.nav-link:active {
+    color: black;
+    text-decoration: none;
+    padding: 14px 16px;
+    margin-left: 5px;
+    overflow: hidden;
+}
+
+li a.nav-link:hover {
+    background-color: black;
+    color: white;
+    padding: 14px 16px;
+}
+
+a.nav-linklegislation:link,
+a.nav-linklegislation:visited,
+a.nav-linklegislation:hover,
+a.nav-linklegislation:active {
+    color: white;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 14px 16px;
+    margin-left: 5px;
+    position: relative;
+    top: 10px;
+    pointer-events: none;
+    padding-bottom: 5px;
+    border-bottom: 2px solid white;
+
+}
+
+ul li {
+    padding: 3px 0px;
+
+}
+
+
+
+li a.nav-linklegislation:hover {
+    pointer-events: none;
+}
+
+a.btn6:link,
+a.btn6:visited,
+a.btn6:hover,
+a.btn6:active {
+    color: white;
+    text-decoration: none;
+    padding: 14px 16px;
+    font-weight: bold;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 4px;
+    border: 2px solid black;
+    cursor: pointer;
+    position: relative;
+    left: 202px;
+    top: 86px;
+    width: 25mm;
+}
+
+.btn6 a:link,
+.btn6 a:visited,
+.btn6 a:hover,
+.btn6 a:active {
+    color: white;
+    text-decoration: none;
+    padding: 14px 16px;
+
+}
+
+.btn6 {
+    background-color: black;
+
+
+}
+
+/*back button hover*/
+.btn6:hover {
+    background-color: white;
+    color: black;
+    border: solid 2px black;
+    background: #fff;
+    color: #1f1f1f !important;
+
+
+}
+
+a.btn7:link,
+a.btn7:visited,
+a.btn7:hover,
+a.btn7:active {
+    color: white;
+    text-decoration: none;
+    padding: 14px 16px;
+    font-weight: bold;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 4px;
+    border: 2px solid black;
+    cursor: pointer;
+    position: relative;
+    left: 630px;
+    top: 30px;
+    width: 25mm;
+}
+
+.btn7 a:link,
+.btn7 a:visited,
+.btn7 a:hover,
+.btn7 a:active {
+    color: white;
+    text-decoration: none;
+    padding: 14px 16px;
+
+}
+
+.btn7 {
+    background-color: black;
+
+
+}
+
+/*back button hover*/
+.btn7:hover {
+    background-color: white;
+    color: black;
+    border: solid 2px black;
+    background: #fff;
+    color: #1f1f1f !important;
+
+
+}
+
+a.btn8:link,
+a.btn8:visited,
+a.btn8:hover,
+a.btn8:active {
+    color: white;
+    text-decoration: none;
+    padding: 14px 16px;
+    font-weight: bold;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 4px;
+    border: 2px solid black;
+    cursor: pointer;
+    position: relative;
+    left: 630px;
+    top: 70px;
+    width: 25mm;
+}
+
+.btn8 a:link,
+.btn8 a:visited,
+.btn8 a:hover,
+.btn8 a:active {
+    color: white;
+    text-decoration: none;
+    padding: 14px 16px;
+
+}
+
+.btn8 {
+    background-color: black;
+
+
+}
+
+/*back button hover*/
+.btn8:hover {
+    background-color: white;
+    color: black;
+    border: solid 2px black;
+    background: #fff;
+    color: #1f1f1f !important;
+
+
+}
+
+a.btn9:link,
+a.btn9:visited,
+a.btn9:hover,
+a.btn9:active {
+    color: black;
+    text-decoration: none;
+    padding: 14px 16px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: medium;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 4px;
+    border: 2px solid white;
+    cursor: pointer;
+    position: relative;
+    left: 630px;
+    top: 70px;
+    width: 25mm;
+}
+
+.btn9 a:link,
+.btn9 a:visited,
+.btn9 a:hover,
+.btn9 a:active {
+    color: black;
+    text-decoration: none;
+    padding: 14px 16px;
+
+}
+
+.btn9 {
+    background-color: white;
+
+
+}
+
+/*back button hover*/
+.btn9:hover {
+    background-color: black;
+    color: white;
+    border: solid 2px white;
+    background: black;
+    color: white !important;
+
+
+}
+
+
+
+/*back button hover*/
+.btn10:hover {
+    background-color: white;
+    color: black;
+    border: solid 2px black;
+    background: #fff;
+    color: #1f1f1f !important;
+}
+
+a.btn10:link,
+a.btn10:visited,
+a.btn10:hover,
+a.btn10:active {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: medium;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 4px;
+    border: 2px solid white;
+    cursor: pointer;
+    position: relative;
+    left: 575px;
+    top: -17px;
+    width: 25mm;
+}
+
+a.btndownload:link,
+a.btndownload:visited,
+a.btndownload:hover,
+a.btndownload:active {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: medium;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 4px;
+    border: 2px solid white;
+    cursor: pointer;
+    position: relative;
+    left: 596px;
+    top: 16px;
+}
+
+.btndownload:hover {
+    background-color: white;
+    color: black;
+    border: solid 2px black;
+    background: #fff;
+    color: #1f1f1f !important;
+}
+
+.btnpleading:hover {
+    background-color: white;
+    color: black;
+    border: solid 2px black;
+    background: #fff;
+    color: #1f1f1f !important;
+}
+
+a.btnpleading:link,
+a.btnpleading:visited,
+a.btnpleading:hover,
+a.btnpleading:active {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: medium;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 4px;
+    border: 2px solid white;
+    cursor: pointer;
+    position: relative;
+    left: 631px;
+    top: 125px;
+    width: 25mm;
+}
+
+a.btnindex2:link,
+a.btnindex2:visited,
+a.btnindex2:hover,
+a.index2:active {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: medium;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 4px;
+    border: 2px solid white;
+    cursor: pointer;
+    position: relative;
+    left: 437px;
+    top: 58px;
+    width: 25mm;
+}
+
+.btnindex2:hover {
+    background-color: white;
+    color: black;
+    border: solid 2px black;
+    background: #fff;
+    color: #1f1f1f !important;
+}
+
+a.btnindex2first:link,
+a.btnindex2first:visited,
+a.btnindex2first:hover,
+a.btnindex2first:active {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: medium;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 4px;
+    border: 2px solid white;
+    cursor: pointer;
+    position: relative;
+    left: 592px;
+    top: 13px;
+    width: 25mm;
+}
+
+.btnindex2first:hover {
+    background-color: white;
+    color: black;
+    border: solid 2px black;
+    background: #fff;
+    color: #1f1f1f !important;
+}
+
+.btncontactscreate {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 4px;
+    border: 2px solid white;
+    cursor: pointer;
+    position: relative;
+    left: 580px;
+    bottom: 13px
+}
+
+/*back button hover*/
+.btncontactscreate:hover {
+    background-color: white;
+    color: black;
+    border: solid 2px black;
+    background: #fff;
+    color: #1f1f1f !important;
+}
+
+a.btncontactscreate:link,
+a.btncontactscreate:visited,
+a.btncontactscreate:hover,
+a.btncontactscreate:active {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: medium;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 4px;
+    border: 2px solid white;
+    cursor: pointer;
+    position: relative;
+    left: 580px;
+    top: -5px;
+    width: 25mm;
+}
+
+.btngeneratorc {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 4px;
+    border: 2px solid white;
+    cursor: pointer;
+    position: relative;
+    left: 555px;
+    bottom: 13px
+}
+
+/*back button hover*/
+.btngeneratorc:hover {
+    background-color: white;
+    color: black;
+    border: solid 2px black;
+    background: #fff;
+    color: #1f1f1f !important;
+}
+
+a.btngeneratorc:link,
+a.btngeneratorc:visited,
+a.btngeneratorc:hover,
+a.btngeneratorc:active {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: medium;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 4px;
+    border: 2px solid white;
+    cursor: pointer;
+    position: relative;
+    left: 576px;
+    top: -5px;
+    width: 25mm;
+}
+
+.btncorrespondence {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 4px;
+    border: 2px solid white;
+    cursor: pointer;
+    position: relative;
+    left: 555px;
+    bottom: 13px
+}
+
+/*back button hover*/
+.btncorrespondence:hover {
+    background-color: white;
+    color: black;
+    border: solid 2px black;
+    background: #fff;
+    color: #1f1f1f !important;
+}
+
+a.btncorrespondence:link,
+a.btncorrespondence:visited,
+a.btncorrespondence:hover,
+a.btncorrespondence:active {
+    color: white;
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: large;
+    padding: 18px 48px;
+    border: none;
+    border-radius: 4px;
+    border: 2px solid white;
+    cursor: pointer;
+    position: relative;
+    left: 438px;
+    top: 38px;
+    width: 25mm;
+}
+
+.btnedit {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 4px;
+    border: 2px solid white;
+    cursor: pointer;
+    position: relative;
+    left: 555px;
+    bottom: 13px
+}
+
+/*back button hover*/
+.btnedit:hover {
+    background-color: white;
+    color: black;
+    border: solid 2px black;
+    background: #fff;
+    color: #1f1f1f !important;
+}
+
+a.btnedit:link,
+a.btnedit:visited,
+a.btnedit:hover,
+a.btnedit:active {
+    color: white;
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: large;
+    padding: 18px 48px;
+    border: none;
+    border-radius: 4px;
+    border: 2px solid white;
+    cursor: pointer;
+    position: relative;
+    left: 529px;
+    top: -299px;
+
+}
+
+.btnedit1 {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 4px;
+    border: 2px solid white;
+    cursor: pointer;
+    position: relative;
+    left: 555px;
+    bottom: 13px
+}
+
+/*back button hover*/
+.btnedit1:hover {
+    background-color: white;
+    color: black;
+    border: solid 2px black;
+    background: #fff;
+    color: #1f1f1f !important;
+}
+
+a.btnedit1:link,
+a.btnedit1:visited,
+a.btnedit1:hover,
+a.btnedit1:active {
+    color: white;
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: large;
+    padding: 18px 48px;
+    border: none;
+    border-radius: 4px;
+    border: 2px solid white;
+    cursor: pointer;
+    position: relative;
+    left: 529px;
+    top: -299px;
+
+}
+
+.btnedit2 {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 4px;
+    border: 2px solid white;
+    cursor: pointer;
+    position: relative;
+    left: 555px;
+    bottom: 13px
+}
+
+/*back button hover*/
+.btnedit2:hover {
+    background-color: white;
+    color: black;
+    border: solid 2px black;
+    background: #fff;
+    color: #1f1f1f !important;
+}
+
+a.btnedit2:link,
+a.btnedit2:visited,
+a.btnedit2:hover,
+a.btnedit2:active {
+    color: white;
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: large;
+    padding: 18px 48px;
+    border: none;
+    border-radius: 4px;
+    border: 2px solid white;
+    cursor: pointer;
+    position: relative;
+    left: 529px;
+    top: -240px;
+
+}
+
+.btnedit3 {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 4px;
+    border: 2px solid white;
+    cursor: pointer;
+    position: relative;
+    left: 555px;
+    bottom: 13px
+}
+
+/*back button hover*/
+.btnedit3:hover {
+    background-color: white;
+    color: black;
+    border: solid 2px black;
+    background: #fff;
+    color: #1f1f1f !important;
+}
+
+a.btnedit3:link,
+a.btnedit3:visited,
+a.btnedit3:hover,
+a.btnedit3.btn1 {
+    color: white;
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: large;
+    padding: 18px 48px;
+    border: none;
+    border-radius: 4px;
+    border: 2px solid white;
+    cursor: pointer;
+    position: relative;
+    left: 529px;
+    top: -182px;
+
+}
+
+.btnedit4 {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 4px;
+    border: 2px solid white;
+    cursor: pointer;
+    position: relative;
+    left: 555px;
+    bottom: 13px
+}
+
+/*back button hover*/
+.btnedit4:hover {
+    background-color: white;
+    color: black;
+    border: solid 2px black;
+    background: #fff;
+    color: #1f1f1f !important;
+}
+
+a.btnedit4:link,
+a.btnedit4:visited,
+a.btnedit4:hover,
+a.btnedit4:active {
+    color: white;
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: large;
+    padding: 18px 48px;
+    border: none;
+    border-radius: 4px;
+    border: 2px solid white;
+    cursor: pointer;
+    position: relative;
+    left: 529px;
+    top: -299px;
+
+}
+
+.btnedit5 {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 4px;
+    border: 2px solid white;
+    cursor: pointer;
+    position: relative;
+    left: 555px;
+    bottom: 13px
+}
+
+/*back button hover*/
+.btnedit5:hover {
+    background-color: white;
+    color: black;
+    border: solid 2px black;
+    background: #fff;
+    color: #1f1f1f !important;
+}
+
+a.btnedit5:link,
+a.btnedit5:visited,
+a.btnedit5:hover,
+a.btnedit5:active {
+    color: white;
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: large;
+    padding: 18px 48px;
+    border: none;
+    border-radius: 4px;
+    border: 2px solid white;
+    cursor: pointer;
+    position: relative;
+    left: 529px;
+    top: -240px;
+
+}
+
+.btnedit6 {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 4px;
+    border: 2px solid white;
+    cursor: pointer;
+    position: relative;
+    left: 555px;
+    bottom: 13px
+}
+
+/*back button hover*/
+.btnedit6:hover {
+    background-color: white;
+    color: black;
+    border: solid 2px black;
+    background: #fff;
+    color: #1f1f1f !important;
+}
+
+a.btnedit6:link,
+a.btnedit6:visited,
+a.btnedit6:hover,
+a.btnedit6.btn1 {
+    color: white;
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: large;
+    padding: 18px 48px;
+    border: none;
+    border-radius: 4px;
+    border: 2px solid white;
+    cursor: pointer;
+    position: relative;
+    left: 529px;
+    top: -182px;
+
+}
+
+.btnedit7 {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 4px;
+    border: 2px solid white;
+    cursor: pointer;
+    position: relative;
+    left: 555px;
+    bottom: 13px
+}
+
+/*back button hover*/
+.btnedit7:hover {
+    background-color: white;
+    color: black;
+    border: solid 2px black;
+    background: #fff;
+    color: #1f1f1f !important;
+}
+
+a.btnedit7:link,
+a.btnedit7:visited,
+a.btnedit7:hover,
+a.btnedit7.btn1 {
+    color: white;
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: large;
+    padding: 14px 48px;
+    border: none;
+    border-radius: 4px;
+    border: 2px solid white;
+    cursor: pointer;
+
+    position: relative;
+    left: 529px;
+    top: -130px;
+}
+
+.btnedit8 {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 4px;
+    border: 2px solid white;
+    cursor: pointer;
+    position: relative;
+    left: 555px;
+    bottom: 13px
+}
+
+/*back button hover*/
+.btnedit8:hover {
+    background-color: white;
+    color: black;
+    border: solid 2px black;
+    background: #fff;
+    color: #1f1f1f !important;
+}
+
+a.btnedit8:link,
+a.btnedit8:visited,
+a.btnedit8:hover,
+a.btnedit8.btn1 {
+    color: white;
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: large;
+    padding: 14px 48px;
+    border: none;
+    border-radius: 4px;
+    border: 2px solid white;
+    cursor: pointer;
+    position: relative;
+    left: 527px;
+    top: -84px;
+
+}
+
+.btnedit9 {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 4px;
+    border: 2px solid white;
+    cursor: pointer;
+    position: relative;
+    left: 555px;
+    bottom: 13px
+}
+
+/*back button hover*/
+.btnedit9:hover {
+    background-color: white;
+    color: black;
+    border: solid 2px black;
+    background: #fff;
+    color: #1f1f1f !important;
+}
+
+a.btnedit9:link,
+a.btnedit9:visited,
+a.btnedit9:hover,
+a.btnedit9.btn1 {
+    color: white;
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: large;
+    padding: 14px 48px;
+    border: none;
+    border-radius: 4px;
+    border: 2px solid white;
+    cursor: pointer;
+    position: relative;
+    left: 590px;
+    top: -32px;
+
+}
+
+.btndelete {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 4px;
+    border: 2px solid white;
+    cursor: pointer;
+    position: relative;
+    left: 555px;
+    bottom: 13px
+}
+
+/*back button hover*/
+.btndelete:hover {
+    background-color: white;
+    color: black;
+    border: solid 2px black;
+    background: #fff;
+    color: #1f1f1f !important;
+}
+
+a.btndelete:link,
+a.btndelete:visited,
+a.btndelete:hover,
+a.btndelete.btn1 {
+    color: white;
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: large;
+    padding: 14px 48px;
+    border: none;
+    border-radius: 4px;
+    border: 2px solid white;
+    cursor: pointer;
+    position: relative;
+    left: 563px;
+    top: -126px;
+}
+
+.btnsearch {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 4px;
+    border: 2px solid white;
+    cursor: pointer;
+    position: relative;
+    left: 555px;
+    bottom: 13px
+}
+
+/*back button hover*/
+.btnsearch:hover {
+    background-color: white;
+    color: black;
+    border: solid 2px black;
+    background: #fff;
+    color: #1f1f1f !important;
+}
+
+a.btnsearch:link,
+a.btnsearch:visited,
+a.btnsearch:hover,
+a.btnsearch:active {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: medium;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 4px;
+    border: 2px solid white;
+    cursor: pointer;
+    position: relative;
+    left: 604px;
+    top: 57px;
+    width: 25mm;
+}
+
+.btnnewfile {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 4px;
+    border: 2px solid white;
+    cursor: pointer;
+    position: relative;
+    left: 555px;
+    bottom: 13px
+}
+
+/*back button hover*/
+.btnnewfile:hover {
+    background-color: white;
+    color: black;
+    border: solid 2px black;
+    background: #fff;
+    color: #1f1f1f !important;
+}
+
+a.btnnewfile:link,
+a.btnnewfile:visited,
+a.btnnewfile:hover,
+a.btnnewfile:active {
+    color: white;
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: large;
+    padding: 18px 48px;
+    border: none;
+    border-radius: 4px;
+    border: 2px solid white;
+    cursor: pointer;
+    position: relative;
+    left: 422px;
+    top: 60px;
+    width: 25mm;
+}
+
+.btncontacts {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 4px;
+    border: 2px solid white;
+    cursor: pointer;
+    position: relative;
+    left: 555px;
+    bottom: 13px
+}
+
+/*back button hover*/
+.btncontacts:hover {
+    background-color: white;
+    color: black;
+    border: solid 2px black;
+    background: #fff;
+    color: #1f1f1f !important;
+}
+
+a.btncontacts:link,
+a.btncontacts:visited,
+a.btncontacts:hover,
+a.btncontacts:active {
+    color: white;
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: large;
+    padding: 18px 48px;
+    border: none;
+    border-radius: 4px;
+    border: 2px solid white;
+    cursor: pointer;
+    position: relative;
+    left: 422px;
+    top: 60px;
+    width: 25mm;
+}
+
+li a.nav-link:hover {
+    background-color: black;
+    color: white;
+    padding: 14px 16px;
+}
+
+.nav-linked {
+    color: black;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 14px 16px;
+
+}
+
+.nav-linked li a.active {
+    background-color: #D5D8DC;
+    padding: 14px 16px;
+    color: black;
+}
+
+a.nav-linked:link,
+a.nav-linked:visited,
+a.nav-linked:hover,
+a.nav-linked:active {
+    color: white;
+    text-decoration: none;
+    padding: 14px 16px;
+    margin-left: 5px;
+}
+
+
+
+li a.nav-linked:hover {
+    background-color: white;
+    color: black;
+    padding: 14px 16px;
+}
+
+
+
+
+* {
+    box-sizing: border-box;
+}
+
+
+
+/*fields for form in generatorc.html*/
+.input1[type=text],
+select,
+textarea {
+    width: 50%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+    color: black;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    position: relative;
+    left: 194px;
+    top: 20px
+}
+
+.input2[type=text],
+select,
+textarea {
+    width: 50%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+    color: black;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    position: relative;
+    left: 147px;
+    top: 15px;
+}
+
+.input4[type=text],
+select,
+textarea {
+    width: 50%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+    color: black;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    position: relative;
+    left: 216px;
+    top: 135px;
+
+}
+
+.input5[type=text],
+select,
+textarea {
+    width: 50%;
+    padding-top: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: none;
+    color: black;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    position: relative;
+    left: 194px;
+    top: 10px;
+}
+
+
+label {
+    padding: 0;
+    display: inline-block;
+}
+
+/*Submit button*/
+.input1[type=submit] {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    border: 2px solid white;
+    cursor: pointer;
+    position: relative;
+    left: 748px;
+    top: 50px
+}
+
+.input1[type=submit]:hover {
+    background-color: white;
+    color: black;
+    border: solid 2px black;
+    background: #fff;
+    color: #1f1f1f !important;
+}
+
+.inputcontacts[type=submit] {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    border: 2px solid white;
+    cursor: pointer;
+    position: relative;
+    left: 710px;
+    top: 49px
+}
+
+.inputcontacts[type=submit]:hover {
+    background-color: white;
+    color: black;
+    border: solid 2px black;
+    background: #fff;
+    color: #1f1f1f !important;
+}
+
+.generatorc[type=submit]:hover {
+    background-color: white;
+    color: black;
+    border: solid 2px black;
+    background: #fff;
+    color: #1f1f1f !important;
+}
+
+.generatorc[type=submit] {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    border: 2px solid white;
+    cursor: pointer;
+    position: relative;
+    left: 700px;
+    top: 49px
+}
+
+.btncorrespondenceedit[type=submit]:hover {
+    background-color: white;
+    color: black;
+    border: solid 2px black;
+    background: #fff;
+    color: #1f1f1f !important;
+}
+
+.btncorrespondenceedit[type=submit] {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    border: 2px solid white;
+    cursor: pointer;
+    position: absolute;
+    top: 505px;
+    left: 650px;
+
+}
+
+.btncontactsedit[type=submit]:hover {
+    background-color: white;
+    color: black;
+    border: solid 2px black;
+    background: #fff;
+    color: #1f1f1f !important;
+}
+
+.btncontactsedit[type=submit] {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    border: 2px solid white;
+    cursor: pointer;
+    position: absolute;
+    top: 470px;
+    left: 650px;
+
+}
+
+.btncorrespondenceedit[type=submit]:hover {
+    background-color: white;
+    color: black;
+    border: solid 2px black;
+    background: #fff;
+    color: #1f1f1f !important;
+}
+
+.btncorrespondenceedit[type=submit] {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    border: 2px solid white;
+    cursor: pointer;
+    position: relative;
+    top: 55px;
+    left: 627px;
+
+}
+
+.input2[type=submit] {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    padding: 12px 16px;
+    border: none;
+    border-radius: 4px;
+    border: 2px solid black;
+    cursor: pointer;
+    width: 25mm;
+    position: relative;
+    top: 120px;
+    right: 351px;
+
+}
+
+
+
+.input2[type=submit]:hover {
+    background-color: white;
+    color: black;
+    border: solid 2px black;
+    background: #fff;
+    color: #1f1f1f !important;
+}
+
+
+.input3[type=text] {
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    border: 2px solid white;
+    cursor: pointer;
+
+
+}
+
+.input4[type=submit] {
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    padding: 12px 16px;
+    border: none;
+    border-radius: 4px;
+    border: 2px solid black;
+    cursor: pointer;
+    width: 25mm;
+    position: relative;
+    top: -100px;
+    left: 620px;
+
+}
+
+a.btnbackpleading_correspondence:link,
+a.btnbackpleading_correspondence:visited,
+a.btnbackpleading_correspondence:hover,
+a.btnbackpleading_correspondence:active {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: medium;
+    padding: 12px 48px;
+    border: none;
+    border-radius: 4px;
+    border: 2px solid black;
+    cursor: pointer;
+    position: relative;
+    left: 0px;
+    top: 10px;
+}
+
+.btnbackpleading_correspondence {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 4px;
+    border: 2px solid white;
+    cursor: pointer;
+    position: relative;
+    left: 555px;
+    bottom: 13px;
+}
+
+.btnbackpleading_correspondence:hover {
+    background-color: white;
+    color: black;
+    border: solid 2px black;
+    background: #fff;
+    color: #1f1f1f !important;
+}
+
+a.btnbackpleading:link,
+a.btnbackpleading:visited,
+a.btnbackpleading:hover,
+a.btnbackpleading:active {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: medium;
+    padding: 12px 48px;
+    border: none;
+    border-radius: 4px;
+    border: 2px solid black;
+    cursor: pointer;
+    position: relative;
+    left: 630px;
+    top: 107px;
+}
+
+.btnbackpleading {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 4px;
+    border: 2px solid white;
+    cursor: pointer;
+    position: relative;
+    left: 555px;
+    bottom: 13px;
+}
+
+.btnbackpleading:hover {
+    background-color: white;
+    color: black;
+    border: solid 2px black;
+    background: #fff;
+    color: #1f1f1f !important;
+}
+
+a.btnbackpleadingindex4:link,
+a.btnbackpleadingindex4:visited,
+a.btnbackpleadingindex4:hover,
+a.btnbackpleadingindex4:active {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: medium;
+    padding: 13px 40px;
+    border: none;
+    border-radius: 4px;
+    border: 2px solid white;
+    cursor: pointer;
+    position: relative;
+    left: 596px;
+    top: 68px;
+}
+
+.btnbackpleadingindex4 {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 4px;
+    border: 2px solid white;
+    cursor: pointer;
+    position: relative;
+    left: 555px;
+    bottom: 13px;
+}
+
+.btnbackpleadingindex4:hover {
+    background-color: white;
+    color: black;
+    border: solid 2px black;
+    background: #fff;
+    color: #1f1f1f !important;
+}
+
+.input4[type=submit]:hover {
+    background-color: black;
+    color: white;
+    border: solid 2px black;
+    background: black;
+    color: white !important;
+}
+
+.inputsearch[type=submit] {
+    background-color: black;
+    color: white;
+    font-weight: 900;
+    padding: 11px 27px;
+    border: none;
+    border-radius: 4px;
+    border: 2px solid white;
+    cursor: pointer;
+    position: relative;
+    left: 727px;
+    top: 91px
+}
+
+
+.inputsearch[type=submit]:hover {
+    background-color: white;
+    color: black;
+    border: solid 2px black;
+    background: #fff;
+    color: #1f1f1f !important;
+}
+
+.inputcreate[type=submit] {
+    background-color: black;
+    color: white;
+    font-weight: 900;
+    padding: 11px 21px;
+    border: none;
+    border-radius: 4px;
+    border: 2px solid white;
+    cursor: pointer;
+    position: relative;
+    left: 727px;
+    top: 91px
+}
+
+
+.inputcreate[type=submit]:hover {
+    background-color: white;
+    color: black;
+    border: solid 2px black;
+    background: #fff;
+    color: #1f1f1f !important;
+}
+
+/*back button*/
+.btn5 {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 4px;
+    border: 2px solid white;
+    cursor: pointer;
+    position: relative;
+    left: 555px;
+    bottom: 13px
+}
+
+/*back button hover*/
+.btn5:hover {
+    background-color: white;
+    color: black;
+    border: solid 2px black;
+    background: #fff;
+    color: #1f1f1f !important;
+}
+
+a.btn5:link,
+a.btn5:visited,
+a.btn5:hover,
+a.btn5:active {
+    color: white;
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: large;
+    padding: 18px 25px;
+    border: none;
+    border-radius: 4px;
+    border: 2px solid white;
+    cursor: pointer;
+    position: relative;
+    left: 490px;
+    top: 80px;
+    width: 25mm;
+}
+
+
+/*Reset button*/
+.input[type=reset] {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    padding: 13px 30px;
+    border: none;
+    border-radius: 4px;
+    border: 2px solid white;
+    cursor: pointer;
+    position: relative;
+    left: 530px;
+    top: 49px
+}
+
+/*Reset button hover*/
+.input[type=reset]:hover {
+    background-color: white;
+    color: black
+}
+
+.container {
+    border-radius: 5px;
+
+    padding: 20px;
+    margin-top: -24px;
+}
+
+.container1 {
+    border-radius: 5px;
+    background-color: white;
+    padding: 20px;
+
+
+
+}
+
+/*delete*/
+.col-25 {
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    position: relative;
+    left: 300px;
+    top: 5px
+}
+
+
+/*delete*/
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 30px;
+}
+
+
+.formlabel {
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    position: relative;
+    left: 300px;
+    top: 5px
+}
+
+
+
+.formlabel {
+    float: left;
+    width: 25%;
+    margin-top: 30px;
+}
+
+/*labels for form in generatorc.html*/
+
+.col-35 {
+    color: black;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    position: relative;
+    left: 300px;
+    top: 50px
+}
+
+
+/*labels for form*/
+.col-35 {
+    float: left;
+    width: 25%;
+    margin-top: 30px;
+}
+
+.forminput {
+    float: left;
+    width: 50%;
+    margin-top: 10px;
+
+}
+
+/*delete*/
+.col-75 {
+    float: left;
+    width: 50%;
+    margin-top: 10px;
+
+}
+
+#btngeneratorc {
+    top: -16px;
+}
+
+#btngeneratorc1 {
+    top: 38px;
+}
+
+#folderPath {
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    display: none;
+    height: 33px;
+    width: 327px;
+    padding: 0px 13px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+    color: black;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: small;
+    position: absolute;
+    right: -340px;
+    bottom: -12px;
+}
+
+#promptOption {
+    background-color: green;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid black;
+    display: none;
+    width: 50%;
+    height: 38px;
+    padding: 0px 13px;
+
+    border-radius: 4px;
+    resize: vertical;
+    color: black;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: small;
+    position: relative;
+    left: 194px;
+    top: 22px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.dropdowngeneratorc {
+    width: 50%;
+    padding-top: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: none;
+    color: black;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    position: relative;
+    left: 194px;
+    top: 18px;
+}
+
+#saveLocation {
+    top: 16px;
+    cursor: pointer;
+}
+
+#saveLocation:hover {
+    background: black;
+    color: white;
+}
+
+.folderPath-label {
+    position: absolute;
+    right: 300px;
+    bottom: 233px;
+    color: white;
+    display: none;
+    font-weight: bold;
+    font-family: "Montserrat", sans-serif;
+}
+
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    color: white;
+    cursor: default;
+    left: 880px;
+    top: -198px;
+    font-weight: 1000;
+    cursor: pointer;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 197px;
+    background-color: white;
+    color: black;
+    text-align: center;
+    padding: 10px 12px;
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    left: 50%;
+    margin-top: 16px;
+    margin-left: -6px;
+
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+.tooltip .tooltiptext::before {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 7px;
+    margin-left: -7px;
+    border-width: 7px;
+    border-style: solid;
+    border-color: transparent transparent white transparent;
+}
+
+input[type="file"] {
+    padding: 10px;
+    background-color: lightgray;
+    border: none;
+    border-radius: 5px;
+    width: 300px;
+}
+
+#fileInput {
+    display: none;
+}
+
+input[type="file"] {
+    padding: 10px;
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    width: 327px;
+    position: relative;
+    left: 194px;
+    top: 16px;
+    height: 37px;
+}
+
+#selectFile {
+    display: block;
+    padding: 10px;
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    width: 327px;
+    height: 34px;
+    position: relative;
+    left: 195px;
+    top: 15px;
+    text-align: left;
+    font-weight: bold;
+    margin-top: -4px;
+}
+
+#selectFile:hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    border: solid 1px white;
+}
+
+.button-success {
+    background-color: green;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 327px;
+    height: 37px;
+    position: relative;
+    left: 195px;
+    top: 15px;
+}
+
+#whichcourt {
+    position: relative;
+    bottom: 30px;
+}
+
+.pleadingspageonenext {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    padding: 12px 27px;
+    border: none;
+    border-radius: 4px;
+    border: 2px solid white;
+    cursor: pointer;
+    position: relative;
+    left: 702px;
+    top: 89px;
+}
+
+.pleadingspageonenext:hover {
+    background-color: white;
+    color: black;
+}
+
+.pleadingspageoneback {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: medium;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 4px;
+    border: 2px solid white;
+    cursor: pointer;
+    position: relative;
+    left: 575px;
+    top: 55px;
+    width: 25mm;
+}
+
+.pleadingspageoneback:hover {
+    background-color: white;
+    color: black;
+}
+
+.test {
+    width: 50%;
+    float: left;
+}
+
+.test2 {
+    width: 50%;
+    float: right;
+}
+
+
+
+
+.dropdownhc {
+    margin-left: 72px;
+    width: 327px;
+    height: 34px;
+    position: absolute;
+    top: 260px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+
+}
+
+
+.heading2 {
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 10px;
+
+}
+
+.d-none {
+    display: none;
+    position: absolute;
+
+}
+
+.d-none1 {
+    display: block;
+
+}
+
+p {
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+
+}
+
+.col-55 {
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    position: absolute;
+    margin-top: 48px;
+    left: 266px;
+    padding: 6px 65px;
+
+}
+
+.fieldlable {
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    position: absolute;
+    margin-top: 50px;
+    left: 826px;
+    padding: 6px 65px;
+
+}
+
+.col-5 {
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    position: absolute;
+    margin-top: -15px;
+    left: 570px;
+    padding: 6px 65px;
+
+
+}
+
+.col-85 {
+    margin-left: 254px;
+    width: 328px;
+    height: 32px;
+    position: absolute;
+    top: 260px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    padding: 11px;
+    border-radius: 4px;
+}
+
+
+.field2input {
+    margin-left: 462px;
+    width: 200px;
+    height: 33px;
+    position: absolute;
+    top: 260px;
+    border-radius: 4px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    padding: 11px;
+}
+
+label {
+    padding: 0;
+    display: inline-block;
+
+}
+
+label1 {
+    padding: 0;
+    display: inline-block;
+    margin-left: 245px;
+}
+
+.col-95 {
+    left: 431px;
+    width: 250px;
+    height: 20px;
+    margin-top: 2px;
+    position: absolute;
+
+}
+
+.p1 {
+    /* color: white; */
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    margin-top: 464px;
+    margin-left: 355px;
+    width: 326px;
+    position: absolute;
+    /* padding: 6px 65px; */
+    /* font-size: 100%; */
+    cursor: pointer;
+    border-radius: 0;
+    /* background-color: black; */
+    border: none;
+    /* border: 2px solid white; */
+    border-radius: 4px;
+}
+
+.p2 {
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    margin: 0;
+    margin-top: 100px;
+    margin-left: 855px;
+    position: absolute;
+    padding: 6px 65px;
+    font-size: 100%;
+    cursor: pointer;
+    border-radius: 0;
+    background-color: black;
+    border: none;
+    border: 2px solid white;
+    border-radius: 4px;
+
+}
+
+.p3 {
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    margin: 0;
+    position: absolute;
+    top: 47%;
+    left: 28%;
+}
+
+.p4 {
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    margin: 0;
+    position: absolute;
+    top: 47%;
+    left: 73%;
+}
+
+.select-block {
+    width: 300px;
+    margin: 110px auto 30px;
+
+}
+
+
+/* For IE <= 11 */
+select::-ms-expand {
+    display: none;
+}
+
+.inputpleadings[type=submit] {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    padding: 12px 27px;
+    border: none;
+    border-radius: 4px;
+    border: 2px solid white;
+    cursor: pointer;
+    position: relative;
+    left: 702px;
+    top: 49px
+}
+
+
+.inputpleadings[type=submit]:hover {
+    background-color: white;
+    color: black;
+    border: solid 2px black;
+    background: #fff;
+    color: #1f1f1f !important;
+}
+
+.input21[type=reset] {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    padding: 13px 23px;
+    border: none;
+    border-radius: 4px;
+    border: 2px solid white;
+    cursor: pointer;
+
+}
+
+.input21[type=reset]:hover {
+    background-color: white;
+    color: black;
+    border: solid 2px black;
+    background: #fff;
+    color: #1f1f1f !important;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    color: white;
+    cursor: default;
+    left: 880px;
+    top: -214px;
+    font-weight: 1000;
+    cursor: pointer;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 197px;
+    background-color: white;
+    color: black;
+    text-align: center;
+    padding: 10px 12px;
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    left: 50%;
+    margin-top: 10px;
+    margin-left: -6px;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+
+}
+
+.tooltip .tooltiptext::before {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 7px;
+    margin-left: -7px;
+    border-width: 7px;
+    border-style: solid;
+    border-color: transparent transparent white transparent;
+}
+
+.searchheadings {
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: 50px;
+    position: relative;
+    left: 456px;
+    top: 56px;
+    width: 155px;
+    background: black;
+}
+
+.logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.button-container {
+    width: 800px;
+    height: 400px;
+    background: black;
+    overflow-y: auto;
+    margin-left: 400px;
+    display: flex;
+    flex-direction: column;
+    /* stack the nested containers vertically */
+    align-items: center;
+    /* center the nested containers horizontally */
+    border: solid 4px white;
+    margin-top: 30px;
+}
+
+.row-container {
+    display: flex;
+    /* create a nested flex container for each row */
+    justify-content: center;
+    /* center the buttons horizontally within the row */
+    margin-top: 15px;
+    /* add a bit of margin between the rows */
+    gap: 20px;
+    /* add column spacing between the buttons */
+}
+
+.row-container>a {
+    flex-basis: 33.33%;
+    /* make each button take up one-third of the container's width */
+    height: 60px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 4px;
+    border: 2px solid white;
+    white-space: nowrap;
+
+}
+
+.row-container:not(:last-child) {
+    margin-bottom: 15px;
+    /* add a gap between the rows */
+}
+
+
+.btnnewfiles:last-child {
+    flex-basis: 66.67%;
+    /* make the last row take up two-thirds of the container's width */
+}
+
+
+
+.btnnewfiles {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 4px;
+    border: 2px solid white;
+    cursor: pointer;
+
+}
+
+/*back button hover*/
+.btnnewfiles:hover {
+    background-color: white;
+    color: black;
+    border: solid 2px black;
+    background: #fff;
+    color: #1f1f1f !important;
+}
+
+a.btnnewfiles:link,
+a.btnnewfiles:visited,
+a.btnnewfiles:hover,
+a.btnnewfiles:active {
+    color: white;
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: large;
+    padding: 18px 38px;
+    border: none;
+    border-radius: 4px;
+    border: 2px solid white;
+    cursor: pointer;
+    position: relative;
+    top: 100px
+}
+
+#warrantsubmit {
+    left: 750px;
+
+}
+
+#warrantback {
+    left: 650px;
+
+}
+
+#eparagraph:hover {
+    background-color: black;
+    color: white;
+    border: solid 1px white;
+    cursor: pointer;
+}
+
+#author {
+    top: 18px;
+}
+
+#author:hover {
+    background-color: black;
+    color: white;
+    border: solid 1px white;
+    cursor: pointer;
+}
+
+#correspondencedownload {
+    left: 596px;
+    top: 10px;
+}
+
+#searchheading {
+    left: 610px;
+}
+
+.searchlable {
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    position: relative;
+    left: 390px;
+    top: 123px
+}
+
+
+/*labels for form*/
+.searchlable {
+    float: left;
+    width: 25%;
+    margin-top: 30px;
+}
+
+.searchheading {
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: x-large;
+    position: relative;
+    left: 627px;
+    top: 130px
+}
+
+
+/*labels for form*/
+.searchheading {
+    float: left;
+    width: 25%;
+    margin-top: -50px;
+}
+
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+    margin: 0;
+}
+
+
+
+
+.reference {
+    display: flex;
+    font-weight: bold;
+    font-family: "Montserrat", sans-serif;
+    align-items: center;
+    justify-content: left;
+    margin-top: 20px;
+    margin-left: 20px;
+
+}
+
+.block {
+    display: table-cell;
+    vertical-align: middle;
+    height: 50px;
+    font-weight: bold;
+}
+
+#test {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1348px;
+    margin-top: auto;
+}
+
+.error {
+    color: #D8000C;
+    background-color: #FFBABA;
+    background-image: url('../11_Images/error.png');
+    pointer-events: none;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.success {
+    color: #4F8A10;
+    background-color: #DFF2BF;
+    background-image: url('../11_Images/success.png');
+    pointer-events: none;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.warning {
+    color: black;
+    background-color: #FEEFB3;
+    background-image: url('../11_Images/warning.png');
+    pointer-events: none;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+.info,
+.success,
+.warning,
+.error,
+.validation {
+
+    display: flex;
+    border: 1px solid;
+    margin: 18px 0px;
+    padding: 3px 20px 15px 55px;
+    background-repeat: no-repeat;
+    background-position: 10px 12px;
+}

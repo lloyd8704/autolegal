@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Claim Form</title>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css">
+    <script src="//code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="//code.jquery.com/ui/1.13.0/jquery-ui.min.js"></script>
+    <style>
+ 
+ body {
+  background-color: #6e6e6e;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+form {
+  width: 740px;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  background-color: white;
+  position: relative;
+  top: -18px;
+      }
+      
+      label {
+        display: block;
+        margin-bottom: 10px;
+        font-weight: bold;
+        margin-left: 20px;
+      }
+      input[type="text"], input[type="email"], textarea {
+        width: 95%;
+        padding: 10px;
+        margin-bottom: -1px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        font-size: 14px;
+        resize: vertical;
+        
+      }
+      input[type="submit"] {
+        width: 100%;
+        padding: 10px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+
+      input[type="submit"]:hover {
+      background-color: #0062cc;
+    }
+
+    .button:hover {
+  background-color: #0062cc;
+}
+textarea {
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            line-height: 1.5;
+            
+        }
+        #spinner-overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 9999;
+      }
+
+      #spinner {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 2rem;
+        color: white;
+      }
+
+      .container_bottom {
+  flex-basis: 100%;
+  padding: 0 10px;
+}
+
+    h1 {
+      text-align: center;
+    background-color:#0062cc;;
+    margin-top: -1px;
+    padding-top: 8px;
+    padding-bottom: 9px;
+    color: white;
+    border-radius: 5px;
+    position: relative;
+    top: 1px;
+    width: 100%;
+    }
+
+    label {
+      display: block;
+      margin-bottom: -8px;
+      
+      position: relative;
+      top: 7px;
+      font-family: "Montserrat", sans-serif;
+      
+    }
+
+    input[type="text"],
+    input[type="email"] {
+      width: 54%;
+      padding: 10px;
+      margin-bottom: -1px;
+      margin-left: 265px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      font-size: 14px;
+      resize: vertical;
+      position: relative;
+      top: -13px;
+      resize: none;
+    }
+
+select{
+  width: 57%;
+      padding: 10px;
+      margin-bottom: -1px;
+      margin-left: 265px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      font-size: 14px;
+      resize: vertical;
+      position: relative;
+      top: -13px;
+      resize: none;
+      cursor: pointer;
+}
+
+    textarea {
+      font-family: Arial, sans-serif;
+      font-size: 15px;
+      line-height: 1.5;
+      resize: vertical;
+      
+ 
+    }
+    textarea {
+      width: 85%;
+    padding: 10px;
+    margin-bottom: -1px;
+    margin-left: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    resize: vertical;
+    position: relative;
+    top: -8px;
+    resize: none;
+    
+    }
+    input[type="submit"] {
+  display: block;
+  margin: 0 auto;
+  width: 150px;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+    input[type="submit"]:hover {
+      background-color: #0062cc;
+    }
+
+    .button:hover {
+      background-color: #0062cc;
+    }
+
+    textarea {
+      font-family: Arial, sans-serif;
+      font-size: 15px;
+      line-height: 1.5;
+      resize: vertical;
+  min-height:150px;
+    }
+#date {
+  cursor: pointer;
+}
+hr {
+  border-width: 4px;
+}
+
+.d-none {
+    display: none;
+    position: absolute;
+
+}
+
+.d-none1 {
+    display: block;
+
+}
+ </style>
+</head>
+    <script>
+      $(document).ready(function() {
+        $('#date').datepicker({ dateFormat: 'dd-mm-yy' });
+      });
+      function startSpinner() {
+        var spinnerOverlay = document.getElementById("spinner-overlay");
+        spinnerOverlay.style.display = "block";
+      }
+
+      function stopSpinner() {
+        var spinnerOverlay = document.getElementById("spinner-overlay");
+        spinnerOverlay.style.display = "none";
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Claim Form</h1><br>
+    <div class="container">
+    <form action="../16_insurance/damage_claim_form_copy_2.php" method="post" onsubmit="startSpinner()">
+      <img src="../11_Images/ACE_CLAIM_FORM.png" alt="Logo">
+      <label for="company_name" style="text-align: center;">DAMAGES CLAIM FORM:</label><br>
+      <hr><br>
+      <label for="company_name">*INSURED:</label>
+      <input type="text" id="company_name" name="company_name" required autocomplete="off">
+
+      <label for="contact_name">*CONTACT PERSON:</label>
+      <input type="text" id="contact_name" name="contact_name" required autocomplete="off">
+
+      <label for="email">*EMAIL:</label>
+      <input type="email" id="email" name="email" required autocomplete="off">
+
+      <label for="contact">*CONTACT NO:</label>
+      <input type="text" id="contact" name="contact" required autocomplete="off">
+
+      <label for="address">*ADDRESS:</label>
+      <input type="text" id="address" name="address" required autocomplete="off">
+
+      <label for="policy_number">*POLICY NUMBER:</label>
+      <input type="text" id="policy_number" name="policy_number" required>
+      
+      <label for="date">*DATE OF INCIDENT:</label>
+      <input type="text" id="date" name="date" required autocomplete="off">
+      
+      <label for="location">*WHERE DID IT HAPPEN:</label>
+      <input type="text" id="location" name="location" required autocomplete="off">
+      
+      <label for="details">*DESCRIBE THE INCIDENT IN DETAIL:</label><br><br>
+      <textarea id="details" name="details" rows="3" cols="30" required autocomplete="off"></textarea>
+
+      <label for="quantum">&nbsp;ESTIMATED QUANTUM <br>&nbsp;OF THE CLAIM:</label>
+      <input type="text" id="quantum" name="quantum" autocomplete="off" value="R">
+    
+      <label id="thirdparties" for="selection">*HOW MANY OTHER<br>&nbsp;VEHICLES WERE INVOLVED:</label>
+     <div class="container">
+          <select id="third_parties" class="p1" onchange="enablethirdparties(this)" name="third_parties" required>
+            <option value="">PLEASE SELECT</option>
+            <option value="1">ONE OTHER VEHICLE</option>
+            <option value="2">TWO OTHER VEHICLES</option>
+          </select>
+        </div>
+        <div>
+        </div>
+
+        <div>
+          <div id="selection" class="d-none1">
+            <div>
+              <label class="d-none1" for="selection"></label>
+            </div>
+            <div>
+              <input type="hidden" id="input2" name="selection" disabled>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div id="driver" class="d-none">
+            <div>
+              <label for="driver">&nbsp;NAME OF OTHER DRIVER:</label>
+            </div>
+            <div>
+              <input type="text" id="input2" name="driver" value="" autocomplete="off" style="text-transform:uppercase">
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div id="driver_contact" class="d-none">
+            <div>
+              <label for="driver_contact">&nbsp;TEL NO OF OTHER DRIVER:</label>
+            </div>
+            <div>
+              <input type="text" id="input2" name="driver_contact" value="" autocomplete="off" style="text-transform:uppercase">
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div id="driver_email" class="d-none">
+            <div>
+              <label for="driver_email">&nbsp;EMAIL OF OTHER DRIVER:</label>
+            </div>
+            <div>
+              <input type="text" id="input2" name="driver_email" value="" autocomplete="off" style="text-transform:uppercase">
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div id="driver_address" class="d-none">
+            <div>
+              <label for="driver_address">&nbsp;ADDRESS OF OTHER DRIVER:</label>
+            </div>
+            <div>
+              <input type="text" id="input2" name="driver_address" value="" autocomplete="off" style="text-transform:uppercase">
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div id="first_driver" class="d-none">
+            <div>
+              <label for="first_driver">&nbsp;NAME OF DRIVER 1:</label>
+            </div>
+            <div>
+              <input type="text" id="input2" name="first_driver" value="" autocomplete="off" style="text-transform:uppercase">
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div id="first_driver_contact" class="d-none">
+            <div>
+              <label for="first_driver">&nbsp;TEL NO OF DRIVER 1:</label>
+            </div>
+            <div>
+              <input type="text" id="input2" name="first_driver_contact" value="" autocomplete="off" style="text-transform:uppercase">
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div id="first_driver_email" class="d-none">
+            <div>
+              <label for="first_driver">&nbsp;EMAIL OF DRIVER 1:</label>
+            </div>
+            <div>
+              <input type="text" id="input2" name="first_driver_email" value="" autocomplete="off" style="text-transform:uppercase">
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div id="first_driver_address" class="d-none">
+            <div>
+              <label for="first_driver">&nbsp;ADDRESS OF DRIVER 1:</label>
+            </div>
+            <div>
+              <input type="text" id="input2" name="first_driver_address" value="" autocomplete="off" style="text-transform:uppercase">
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div id="second_driver" class="d-none">
+            <div>
+              <label for="rc">&nbsp;NAME OF DRIVER 2:</label>
+            </div>
+            <div>
+              <input type="text" id="input2" name="second_driver" value="" autocomplete="off" style="text-transform:uppercase">
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div id="second_driver_contact" class="d-none">
+            <div>
+              <label for="second_driver_contact">&nbsp;TEL NO OF DRIVER 2:</label>
+            </div>
+            <div>
+              <input type="text" id="input2" name="second_driver_contact" value="" autocomplete="off" style="text-transform:uppercase">
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div id="second_driver_email" class="d-none">
+            <div>
+              <label for="second_driver_email">&nbsp;EMAIL OF DRIVER 2:</label>
+            </div>
+            <div>
+              <input type="text" id="input2" name="second_driver_email" value="" autocomplete="off" style="text-transform:uppercase">
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div id="second_driver_address" class="d-none">
+            <div>
+              <label for="second_driver_address">&nbsp;ADDRESS OF DRIVER 2:</label>
+            </div>
+            <div>
+              <input type="text" id="input2" name="second_driver_address" value="" autocomplete="off" style="text-transform:uppercase">
+            </div>
+          </div>
+        </div><br>
+      <input type="submit" value="Submit">
+    </form>
+    </div>
+    <div id="spinner-overlay">
+      <div id="spinner">Processing claim...</div>
+    </div>
+    <script type="text/javascript">
+      function enablethirdparties(answer) {
+        console.log(answer.value);
+        if (answer.value == "") {
+
+          document.getElementById("selection").classList.remove('d-none');
+          document.getElementById("selection").classList.add('d-none1');
+          document.getElementById("driver").classList.add('d-none');
+          document.getElementById("driver_contact").classList.add('d-none');
+          document.getElementById("driver_email").classList.add('d-none');
+          document.getElementById("driver_address").classList.add('d-none');
+          document.getElementById("first_driver").classList.add('d-none');
+          document.getElementById("first_driver_contact").classList.add('d-none');
+          document.getElementById("first_driver_email").classList.add('d-none');
+          document.getElementById("first_driver_address").classList.add('d-none');
+          document.getElementById("second_driver").classList.add('d-none');
+          document.getElementById("second_driver_contact").classList.add('d-none');
+          document.getElementById("second_driver_email").classList.add('d-none');
+          document.getElementById("second_driver_address").classList.add('d-none');
+          document.getElementById("third_party_contact").classList.add('d-none');
+          document.getElementById("driver").classList.add('d-none');
+          document.getElementById("hc").classList.add('d-none');
+          document.getElementById("other").classList.add('d-none');
+          document.getElementById("otherhc").classList.add('d-none');
+          document.getElementById("highcourts").classList.add('d-none');
+
+        }
+        if (answer.value == "1") {
+          document.getElementById("selection").classList.remove('d-none1');
+          document.getElementById("selection").classList.add('d-none');
+          document.getElementById("driver").classList.remove('d-none');
+          document.getElementById("driver_contact").classList.remove('d-none');
+          document.getElementById("driver_email").classList.remove('d-none');
+          document.getElementById("driver_address").classList.remove('d-none');
+          document.getElementById("first_driver").classList.add('d-none');
+          document.getElementById("first_driver_contact").classList.add('d-none');
+          document.getElementById("first_driver_email").classList.add('d-none');
+          document.getElementById("first_driver_address").classList.add('d-none');
+          document.getElementById("second_driver").classList.add('d-none');
+          document.getElementById("second_driver_contact").classList.add('d-none');
+          document.getElementById("second_driver_email").classList.add('d-none');
+          document.getElementById("second_driver_address").classList.add('d-none');
+          document.getElementById("third_party_contact").classList.add('d-none');
+          document.getElementById("other").classList.add('d-none');
+          document.getElementById("otherhc").classList.add('d-none');
+          document.getElementById("highcourts").classList.add('d-none');
+        }
+        if (answer.value == "2") {
+          document.getElementById("selection").classList.remove('d-none1');
+          document.getElementById("selection").classList.add('d-none');
+          document.getElementById("driver").classList.add('d-none');
+          document.getElementById("driver_contact").classList.add('d-none');
+          document.getElementById("driver_email").classList.add('d-none');
+          document.getElementById("driver_address").classList.add('d-none');
+          document.getElementById("first_driver").classList.remove('d-none');
+          document.getElementById("first_driver_contact").classList.remove('d-none');
+          document.getElementById("first_driver_email").classList.remove('d-none');
+          document.getElementById("first_driver_address").classList.remove('d-none');
+          document.getElementById("second_driver").classList.remove('d-none');
+          document.getElementById("second_driver_contact").classList.remove('d-none');
+          document.getElementById("second_driver_email").classList.remove('d-none');
+          document.getElementById("second_driver_address").classList.remove('d-none');
+          document.getElementById("third_party_contact").classList.remove('d-none');
+          document.getElementById("other").classList.add('d-none');
+          document.getElementById("otherhc").classList.add('d-none');
+          document.getElementById("highcourts").classList.add('d-none');
+        }};
+      
+      // enable all form elements when the page finishes loading
+      window.addEventListener("load", function () {
+        var formElements = document.getElementsByTagName("input");
+        for (var i = 0; i < formElements.length; i++) {
+          formElements[i].disabled = false;
+        }
+
+        formElements = document.getElementsByTagName("textarea");
+        for (var i = 0; i < formElements.length; i++) {
+          formElements[i].disabled = false;
+        }
+      });
+      
+      // hide spinner when form is submitted
+      document.querySelector("form").addEventListener("submit", function () {
+        setTimeout(stopSpinner, 25000);
+      });     
+    </script>
+  </body>
+</html>
+

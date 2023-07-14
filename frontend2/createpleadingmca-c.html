@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="app.css">
+    <title>Select a Pleading</title>
+</head>
+<div id="test">
+
+    <body style="background-color: black">
+        <navi>
+            <div class="heading1">
+                <h4>AutoLegal</h4>
+            </div>
+            <ul class="nav-linker">
+                <li><a class="nav-link" href="Index.html">Home</a></li>
+                <li><a class="nav-link" href="../frontend2/Pages/newfile.html">New&nbspFile</a></li>
+                <li><a class="nav-link" href="../frontend2/Pages/correspondence.html">Correspondence</a></li>
+                <li><a class="nav-link active" href="../frontend2/Pages/pleadings.html">Pleadings</a></li>
+                <li><a class="nav-link" href="../frontend2/Pages/contactshome.html">Contacts</a></li>
+                <li><a class="nav-link" href="../frontend2/Pages/dropdownlegislation.php">Legislation</a></li>
+                <li><a class="nav-link" href="../frontend2/Pages/edit.php">Edit</a></li>
+            </ul>
+        </navi>
+        <br><br>
+        <form action="../frontend2/Pages/phpoffice/vendor/pageb.php" method="post">
+            <fieldset>
+                <legend>
+                    &nbspList of Pleadings&nbsp
+                </legend><br><br><br>
+                <label>Select a Pleading:</label>
+                <input autocomplete="off" role="combobox" list="" id="input" name="browsers" placeholder="Search... " required>
+                <!-- Its important that you keep list attribute empty to hide the default dropdown icon and the browser's default datalist -->
+
+                <datalist id="browsers" role="listbox">
+                    <option value="Notice of Bar">Notice of Bar</option>
+                    <option value="Notice of Intention to Defend">Notice of Intention to Defend</option>
+                    <option value="Summons">Summons</option>
+                    <option value="Microsoft Edge">Microsoft Edge</option>
+                    <option value="Firefox">Firefox</option>
+                    <option value="Microsoft Edge">Microsoft Edge</option>
+                    <option value="Firefox">Firefox</option>
+                    <option value="Microsoft Edge">Microsoft Edge</option>
+                    <option value="Firefox">Firefox</option>
+                    <option value="Microsoft Edge">Microsoft Edge</option>
+                    <option value="Firefox">Firefox</option>
+                    <option value="Microsoft Edge">Microsoft Edge</option>
+                    <option value="Firefox">Firefox</option>
+                    <option value="Microsoft Edge">Microsoft Edge</option>
+                    <option value="Firefox">Firefox</option>
+                    <option value="Microsoft Edge">Microsoft Edge</option>
+                    <option value="Firefox">Firefox</option>
+                    <option value="Microsoft Edge">Microsoft Edge</option>
+                    <option value="Firefox">Firefox</option>
+                    <option value="Microsoft Edge">Microsoft Edge</option>
+                    <option value="Firefox">Firefox</option>
+                    <option value="Microsoft Edge">Microsoft Edge</option>
+                    <option value="Firefox">Firefox</option>
+                </datalist>
+
+            </fieldset><br>
+
+            <div><button class="inputdropdown" type="submit">Next</div>
+        </form>
+        <style>
+            fieldset {
+                position: relative;
+                border: 2px solid white;
+                width: 360px;
+                border-radius: 5px;
+                left: 510px;
+                top: 15px;
+            }
+
+            legend {
+                color: white;
+                font-size: 28px;
+                font-family: sans-serif;
+            }
+
+            label {
+                color: white;
+                font-size: 24px;
+                font-family: sans-serif;
+            }
+
+            input {
+                font-size: 18px;
+                padding: 5px;
+                height: 35px;
+                width: 352px;
+                border: 1px solid white;
+                outline: none;
+                border-radius: 5px;
+                color: black;
+                margin-left: -2px;
+
+                /*   border-bottom: none; */
+            }
+
+            form:invalid button {
+                opacity: 0.3;
+                pointer-events: none;
+
+            }
+
+            input:hover {
+                background-color: black;
+                color: white;
+                cursor: text;
+                /*   border-bottom: none; */
+            }
+
+
+            .inputdropdown {
+                background-color: black;
+                color: white;
+                font-size: 20px;
+                font-weight: bold;
+                padding: 0px 44px;
+                border: none;
+                border-radius: 4px;
+                border: 2px solid white;
+                cursor: pointer;
+                position: relative;
+                width: 148px;
+                height: 40px;
+                left: 888px;
+                top: -43px;
+            }
+
+            .inputdropdown:hover {
+                background-color: white;
+                color: black;
+                cursor: pointer
+                    /*   border-bottom: none; */
+            }
+
+            datalist {
+                position: absolute;
+                background-color: black;
+                border: 1px solid white;
+                border-radius: 0 0 5px 5px;
+                border-top: none;
+                font-family: sans-serif;
+                width: 350px;
+                padding: 5px;
+                max-height: 23rem;
+                overflow-y: auto
+            }
+
+            option {
+                background-color: black;
+                padding: 4px;
+                color: white;
+                margin-bottom: 1px;
+                font-size: 18px;
+                cursor: pointer;
+            }
+
+            option:hover,
+            .active {
+                background-color: white;
+                color: black;
+            }
+        </style>
+        <script>
+            input.onfocus = function() {
+                browsers.style.display = 'block';
+                input.style.borderRadius = "5px 5px 0 0";
+                inputdropdown.style.display = 'none'
+            };
+            for (let option of browsers.options) {
+                option.onclick = function() {
+                    input.value = option.value;
+                    browsers.style.display = 'none';
+                    input.style.borderRadius = "5px";
+
+                }
+            };
+
+            input.oninput = function() {
+                currentFocus = -1;
+                var text = input.value.toUpperCase();
+                for (let option of browsers.options) {
+                    if (option.value.toUpperCase().indexOf(text) > -1) {
+                        option.style.display = "block";
+                    } else {
+                        option.style.display = "none";
+
+                    }
+                };
+            }
+            var currentFocus = -1;
+            input.onkeydown = function(e) {
+                if (e.keyCode == 40) {
+                    currentFocus++
+                    addActive(browsers.options);
+                } else if (e.keyCode == 38) {
+                    currentFocus--
+                    addActive(browsers.options);
+                } else if (e.keyCode == 13) {
+                    e.preventDefault();
+                    if (currentFocus > -1) {
+                        /*and simulate a click on the "active" item:*/
+                        if (browsers.options) browsers.options[currentFocus].click();
+                    }
+                }
+            }
+
+            function addActive(x) {
+                if (!x) return false;
+                removeActive(x);
+                if (currentFocus >= x.length) currentFocus = 0;
+                if (currentFocus < 0) currentFocus = (x.length - 1);
+                x[currentFocus].classList.add("active");
+            }
+
+            function removeActive(x) {
+                for (var i = 0; i < x.length; i++) {
+                    x[i].classList.remove("active");
+                }
+            }
+        </script>
+        <img src="../frontend2/Documents/hex.png" class="hexagons" alt="Outline of three hexagons">
+
+    </body>
+
+</html>

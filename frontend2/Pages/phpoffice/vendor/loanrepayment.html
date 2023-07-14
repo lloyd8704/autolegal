@@ -1,0 +1,44 @@
+<html>
+<head>
+  <script>
+    const inputField1 = document.querySelector("#input1");
+    const inputField2 = document.querySelector("#input2");
+    const inputField3 = document.querySelector("#input3");
+    const inputField4 = document.querySelector("#input4");
+    const resultField1 = document.querySelector("#result1");
+    const resultField2 = document.querySelector("#result2");
+    const resultField3 = document.querySelector("#result3");
+    
+
+    inputField1.addEventListener("keyup", calculate);
+    inputField2.addEventListener("keyup", calculate);
+    inputField3.addEventListener("keyup", calculate);
+    inputField4.addEventListener("keyup", calculate);
+
+    function calculate() {
+        let principal = parseFloat(inputField1.value.replace(/,/g, ''));
+        let interestRate = parseFloat(inputField2.value.replace(/,/g, ''))/100/12;
+        let loanTerm = parseFloat(inputField3.value.replace(/,/g, ''))*12;
+        let currentPayment = parseFloat(inputField4.value.replace(/,/g, ''));
+        let lumpSumPayment = currentPayment - (principal*interestRate/(1-Math.pow(1+interestRate, -loanTerm)));
+        let reducedTerm = loanTerm - (Math.log(1 - ((lumpSumPayment/principal)*(1-(1/(1+interestRate))))/interestRate))/(Math.log(1+interestRate));
+        let reducedPayment = currentPayment - lumpSumPayment/reducedTerm*12;
+
+        resultField1.innerHTML = reducedTerm.toFixed(0) + ' Years';
+        resultField2.innerHTML = reducedPayment.toFixed(0);
+        resultField3.innerHTML = lumpSumPayment.toFixed(0);
+    }
+  </script>
+</head>
+<body>
+  <h1>Home Loan Calculator</h1>
+  <p>Enter the following information:</p>
+  <p>Principal Amount: <input type="text" id="input1" /></p>
+  <p>Interest Rate (% p.a.): <input type="text" id="input2" /></p>
+  <p>Loan Term (months): <input type="text" id="input3" /></p>
+  <p>Current Monthly Repayment: <input type="text" id="input4" /></p>
+  <p>Reduced Loan Term: <span id="result1"></span></p>
+  <p>Reduced Monthly Repayment: <span id="result2"></span></p>
+  <p>Interest Saved: <span id="result3"></span></p>
+</body>
+</html>

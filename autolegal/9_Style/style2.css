@@ -1,0 +1,168 @@
+.heading {
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 20px;
+
+
+}
+
+
+
+.body-text {
+    display: flex;
+    font-family: "Montserrat", sans-serif;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+
+
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 10vh;
+    background-color: black;
+    font-family: "Montserrat", sans-serif;
+    margin: -9px;
+
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+
+}
+
+.info,
+.success,
+.warning,
+.error,
+.validation {
+    display: flex;
+    border: 1px solid;
+    margin: 28px 0px;
+    padding: 9px 26px 17px 54px;
+    background-repeat: no-repeat;
+    background-position: 8px 17px;
+}
+
+
+
+.info {
+    color: #00529B;
+    background-color: #BDE5F8;
+    background-image: url('https://i.imgur.com/ilgqWuX.png');
+}
+
+.success {
+    color: #4F8A10;
+    background-color: #DFF2BF;
+    background-image: url('../frontend2/Documents/success.png');
+    pointer-events: none;
+}
+
+.warning {
+    color: black;
+    background-color: #FEEFB3;
+    background-image: url('../frontend2/Documents/warning.png');
+    pointer-events: none;
+}
+
+.error {
+    color: #D8000C;
+    background-color: #FFBABA;
+    background-image: url('../frontend2/Documents/error.png');
+    pointer-events: none;
+}
+
+.validation {
+    color: #D63301;
+    background-color: #FFCCBA;
+    background-image: url('https://i.imgur.com/GnyDvKN.png');
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+    color: black;
+    text-decoration: none;
+
+
+}
+
+
+
+
+
+.contact {
+    color: black;
+    text-decoration: none;
+
+    font-size: large;
+    font-weight: bold;
+    font-family: "Montserrat", sans-serif;
+
+
+
+}
+
+.test {
+    color: white;
+    background-color: black;
+    text-decoration: none;
+    width: 4cm;
+    height: 1.5cm;
+    font-weight: bold;
+    font-family: "Montserrat", sans-serif;
+    cursor: pointer;
+    left: 604px;
+    border-radius: 4px;
+
+    position: relative;
+    top: -338px;
+
+}
+
+.test:hover {
+    background-color: white;
+    color: black;
+    border: solid 2px black;
+    background: #fff;
+    color: #1f1f1f !important;
+
+
+}
+
+#test {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1348px;
+    margin-top: auto;
+}
+
+.heading3 {
+    font-size: 24px;
+    left: 35%;
+    right: 30%;
+    position: absolute;
+    font-weight: bold;
+
+}
+
+.hexagonssend {
+    display: block;
+    margin-top: -9px;
+
+}
+
+.hexagons2send {
+    display: block;
+    position: absolute;
+    left: 956px;
+    top: 341px;
+
+}

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Damages Claim Form</title>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css">
+    <script src="//code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="//code.jquery.com/ui/1.13.0/jquery-ui.min.js"></script>
+    <style>
+      /* Style the container */
+      .container {
+        width: 50%;
+        margin: auto;
+        text-align: center;
+        padding: 20px;
+        border: 1px solid gray;
+        margin-top: -45px;
+        background-color: #e6e6e6;
+      }
+
+      /* Style the labels and inputs */
+      label{
+        display: inline-block;
+        margin-bottom: 10px;
+        vertical-align: top;
+      
+      }
+
+      input {
+        display: inline-block;
+        margin-bottom: 10px;
+        vertical-align: top;
+        text-transform: capitalize;
+      }
+
+      label {
+        width: 120px;
+        text-align: left;
+        margin-left: 20px;
+      }
+
+      /* Style the submit button */
+      input[type=submit] {
+        background-color:  #009bff;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      
+      }
+
+      #inputlong, #inputlong_date {
+        width: 494px;
+      }
+
+      #inputlong_date {
+        cursor: pointer;
+      }
+
+      textarea {
+      font-family: Arial, sans-serif;
+      line-height: 1.5;
+      width: 494px;
+      resize: vertical;
+      min-height: 60px;
+    }
+
+    #info{
+        margin-left: -206px;
+    width: 400px;
+    }
+    h1 {
+        text-align: center;
+    background-color: #009bff;
+    margin-top: 0px;
+    padding-top: 8px;
+    padding-bottom: 9px;
+    color: white;
+    border-radius: 5px;
+    position: relative;
+    width: 719px;
+    margin-left: auto;
+    margin-right: auto;
+    }
+    input[type=submit]:hover {
+  background-color: #0062cc;
+}
+    </style>
+  </head>
+  <script>
+    $(document).ready(function() {
+      $('#inputlong_date').datepicker({ dateFormat: 'dd-mm-yy' });
+    });
+    </script>
+  <body>
+    <h1>Damages Claim Form</h1><br>
+    <div class="container">
+      <form action="../16_insurance/damage_claim_form.php" method="post">
+        <div>
+          <label for="company_name">Company name:</label>
+          <input type="text" id="inputlong" name="company_name" autocomplete="off">
+        </div>
+        <div>
+          <label for="contact_name">Contact name:</label>
+          <input type="text" id="contact_name" name="contact_name" autocomplete="off">
+          <label for="email">Email Address:</label>
+          <input type="text" id="email" name="email" autocomplete="off">
+        </div>
+        <div>
+          <label for="address">Address:</label>
+          <input type="text" id="address" name="address" autocomplete="off">
+          <label for="contact_number">Contact number:</label>
+          <input type="text" id="contact_number" name="contact_number" autocomplete="off">
+        </div>
+        <div>
+          <label for="date">Date of Incident:</label>
+          <input type="text" id="inputlong_date" name="date" autocomplete="off" placeholder="Please Select">
+        </div>
+        <div>
+          <label for="location">Where Incident Occurred:</label>
+          <input type="text" id="inputlong" name="location" autocomplete="off">
+        </div>
+        <div>
+          <label for="cause">Cause of Incident:</label>
+          <input type="text" id="inputlong" name="cause" autocomplete="off">
+        </div>
+        <div>
+            <label id="info" for="input7">If the Incident was reported to the Police:</label>
+        </div>
+        <div>
+            <label for="police_station">Police Station:</label>
+            <input type="text" id="police_station" name="police_station" autocomplete="off">
+            <label for="case">CAS number:</label>
+            <input type="text" id="case" name="case" autocomplete="off">
+        </div>
+        <div>
+            <label id="info" for="input7">If the Incident was caused by a Third Party:</label>
+        </div>
+        <div>
+            <label for="third_party_name">Name of Party:</label>
+            <input type="text" id="third_party_name" name="third_party_name" autocomplete="off">
+            <label for="third_party_contact">Contact Number:</label>
+            <input type="text" id="third_party_contact" name="third_party_contact" autocomplete="off">
+        </div>
+        <div>
+            <label for="third_party_address">Address of Party:</label>
+            <input type="text" id="inputlong" name="third_party_address" autocomplete="off">
+          </div>
+          <div>
+            <label for="third_party_email">Email of Party:</label>
+            <input type="text" id="inputlong" name="third_party_email" autocomplete="off">
+          </div>
+        <div>
+        <label for="details">Explain what Occurred:</label>
+      <textarea id="details" name="details" rows="3" cols="30" required autocomplete="off"></textarea>
+        </div>
+        <div>
+    <br>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <link rel="icon" type="image/x-icon" href="../12_Icons/favicon.ico">
+  
+
+  
+  <style>
+    #login-container {
+      border: 2px solid black;
+      margin: 0 auto;
+      width: 310px;
+      padding: 20px;
+      position: relative;
+    }
+
+    #login-form label {
+      display: inline-block;
+      width: 80px;
+    }
+
+    #login-form input {
+      width: 200px;
+    }
+
+    #message {
+      color: red;
+      font-weight: bold;
+    }
+
+    #togglePassword {
+      cursor: pointer;
+      position: absolute;
+      top: 47%;
+    right: 12px;
+    transform: translateY(-50%);
+    }
+
+    #login-form button {
+      margin-top: 10px;
+      cursor: pointer;
+    }
+
+  </style>
+</head>
+<body>
+  <h1 style="text-align: center;">Login</h1>
+  <div id="login-container">
+    <form id="login-form" method="post">
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" autocomplete="off" required><br><br>
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required>
+      <i class="fas fa-eye" id="togglePassword"></i><br><br>
+      <div style="text-align: center;">
+        <button type="submit">Login</button>
+      </div>
+      
+    </form>
+  </div>
+  <div id="message"></div>
+ <script>
+    $(document).ready(function() {
+      $("#login-form").submit(function(event) {
+        event.preventDefault(); // Prevent the form from submitting normally
+        var formData = $(this).serialize(); // Serialize the form data
+        $.ajax({
+          url: "login.php",
+          type: "POST",
+          data: formData,
+          success: function(response) {
+            if (response == "success") {
+              // Redirect to the home page
+              window.location.href = "../1_Home/Index.html";
+            } else {
+              // Display an error message
+              $("#message").html("Incorrect username or password.");
+              // Hide the message after 2 seconds
+              setTimeout(function() {
+                $("#message").html("");
+              }, 2000);
+            }
+          }
+        });
+      });
+
+      $("#togglePassword").click(function() {
+        const passwordInput = $("#password");
+        const toggleIcon = $(this);
+        if (passwordInput.attr("type") === "password") {
+          passwordInput.attr("type", "text");
+          toggleIcon.removeClass("fa-eye");
+          toggleIcon.addClass("fa-eye-slash");
+        } else {
+          passwordInput.attr("type", "password");
+          toggleIcon.removeClass("fa-eye-slash");
+          toggleIcon.addClass("fa-eye");
+        }
+      });
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Claim Form</title>
+    <style>
+      /* Style the container */
+      .container {
+    width: 700px;
+    margin: auto;
+    text-align: center;
+    padding-left: 8px;
+    padding-right: 32px;
+    padding-top: 15px;
+ 
+    border: 1px solid #ccc;
+    margin-top: -47px;
+ 
+      }
+
+      /* Style the labels and inputs */
+      label, input {
+        display: inline-block;
+        margin-bottom: 10px;
+        vertical-align: top;
+        text-align: left;
+        
+      }
+
+      label {
+        width: 120px;
+        text-align: left;
+        margin-left: 20px;
+        margin-top: 4px;
+        font-family: "Arial", sans-serif;
+      }
+
+      /* Style the submit button */
+      input[type=submit] {
+        background-color: #009bff;;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        text-align: left;
+      }
+
+      #inputlong {
+        width: 540px;
+        text-align: left;
+      }
+
+      textarea {
+      font-family: Arial, sans-serif;
+      font-size: 15px;
+      width: 540px;
+      text-align: left;
+      resize: vertical;
+      display: inline-block;
+    margin-bottom: 10px;
+    vertical-align: top;
+    height: auto;
+    }
+
+    #info{
+        margin-left: -252px;
+    width: 400px;
+    margin-top: 4px;
+    }
+    h1 {
+        text-align: center;
+    background-color: #009bff;
+    margin-top: 0px;
+    padding-top: 8px;
+    padding-bottom: 9px;
+    color: white;
+    border-radius: 5px;
+    position: relative;
+    width: 742px;
+    margin-left: auto;
+    margin-right: auto;
+    top: -7px;
+    }
+    p {
+      border-bottom: 1px solid black;
+      width: 200px;
+      display: inline-block;
+        margin-bottom: 10px;
+        vertical-align: top;
+        text-align: left;
+    }
+    </style>
+  </head>
+  <body>
+    <h1>Damages Claim Form</h1><br>
+    <div class="container">
+      <form>
+        <div>
+          <label for="company_name">Company name:</label>
+          <input type="text" id="inputlong" name="company_name" autocomplete="off" value="{company_name}">
+        </div>
+        <div>
+          <label for="contact_name">Contact name:</label>
+          <input type="text" id="contact_name" name="contact_name" autocomplete="off" value="{contact_name}">
+          <label for="email">Email Address:</label>
+          <input type="text" id="email" name="email" autocomplete="off" value="{email}">
+        </div>
+        <div>
+          <label for="address">Address:</label>
+          <input type="text" id="address" name="address" autocomplete="off" value="{address}">
+          <label for="contact_number">Contact number:</label>
+          <input type="text" id="contact_number" name="contact_number" autocomplete="off" value="{contact_number}">
+        </div>
+        <div>
+          <label for="date">Date of Incident:</label>
+          <input type="text" id="inputlong" name="date" autocomplete="off" value="{date}">
+        </div>
+        <div>
+          <label for="location">Where Incident Occurred:</label>
+          <input type="text" id="inputlong" name="location" autocomplete="off" value="{location}">
+        </div>
+        <div>
+          <label for="cause">Cause of Incident:</label>
+          <input type="text" id="inputlong" name="cause" autocomplete="off" value="{cause}">
+        </div>
+        <div>
+            <label id="info" for="input7">If the Incident was reported to the Police:</label>
+        </div>
+        <div>
+            <label for="police_station">Police Station:</label>
+            <input type="text" id="police_station" name="police_station" autocomplete="off" value="{police_station}">
+            <label for="case">CAS number:</label>
+            <input type="text" id="case" name="case" autocomplete="off" value="{case}">
+        </div>
+        <div>
+            <label id="info" for="input7">If the Incident was caused by a Third Party:</label>
+        </div>
+        <div>
+            <label for="third_party_name">Name of Party:</label>
+            <input type="text" id="third_party_name" name="third_party_name" autocomplete="off" value="{third_party_name}">
+            <label for="third_party_contact">Contact Number:</label>
+            <input type="text" id="third_party_contact" name="third_party_contact" autocomplete="off" value="{third_party_contact}">
+        </div>
+        <div>
+            <label for="third_party_address">Address of Party:</label>
+            <input type="text" id="inputlong" name="third_party_address" autocomplete="off" value="{third_party_address}">
+          </div>
+        <div>
+          <div>
+            <label for="third_party_email">Email of Party:</label>
+            <input type="text" id="inputlong" name="third_party_email" autocomplete="off" value="{third_party_email}">
+          </div>
+        <div>
+        <label for="details">Explain what Occurred:</label>
+        <textarea id="inputlong" name="details" required autocomplete="off">{details}</textarea>
+        </div>
+        <br>
+        <label for="#">Your Name:</label>
+        <p></p>
+        <label for="#">Your Position:</label>
+        <p></p>
+        <br>
+      <br><br>
+      <label for="#">Signature:</label>
+      <p></p>
+      <label for="#">Date:</label>
+      <p></p>
+      <br><br>
+      </form>
+    </div>
+  </body>
+</html>
