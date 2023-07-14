@@ -1,6 +1,0 @@
-{
-    "require": {
-        "php-ai/php-ml": "^0.10.0",
-        "google/cloud-text-to-speech": "^1.5"
-    }
-}
